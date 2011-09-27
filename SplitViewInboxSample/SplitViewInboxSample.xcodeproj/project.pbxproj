@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B2D23E41432877200641B85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D23E31432877200641B85 /* UIKit.framework */; };
+		7B2D23E61432877200641B85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D23E51432877200641B85 /* Foundation.framework */; };
+		7B2D23E81432877200641B85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D23E71432877200641B85 /* CoreGraphics.framework */; };
+		7B2D23EE1432877200641B85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D23EC1432877200641B85 /* InfoPlist.strings */; };
+		7B2D23F01432877200641B85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D23EF1432877200641B85 /* main.m */; };
+		7B2D23F41432877200641B85 /* SplitViewInboxSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D23F31432877200641B85 /* SplitViewInboxSampleAppDelegate.m */; };
+		7B2D23F71432877200641B85 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D23F51432877200641B85 /* MainWindow.xib */; };
+		7B2D2410143288A300641B85 /* UABeveledLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D2401143288A300641B85 /* UABeveledLoadingIndicator.m */; };
+		7B2D2411143288A300641B85 /* UAInboxAlertHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D2403143288A300641B85 /* UAInboxAlertHandler.m */; };
+		7B2D2412143288A300641B85 /* UAInboxMessageListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D2405143288A300641B85 /* UAInboxMessageListCell.m */; };
+		7B2D2413143288A300641B85 /* UAInboxMessageListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D2407143288A300641B85 /* UAInboxMessageListController.m */; };
+		7B2D2414143288A300641B85 /* UAInboxMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D2409143288A300641B85 /* UAInboxMessageViewController.m */; };
+		7B2D2415143288A300641B85 /* UAInboxNavUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D240B143288A300641B85 /* UAInboxNavUI.m */; };
+		7B2D2416143288A300641B85 /* UAInboxOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D240D143288A300641B85 /* UAInboxOverlayController.m */; };
+		7B2D2417143288A300641B85 /* UAInboxUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D240F143288A300641B85 /* UAInboxUI.m */; };
+		7B2D2426143288D700641B85 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D2419143288D700641B85 /* check.png */; };
+		7B2D2427143288D700641B85 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D241A143288D700641B85 /* check@2x.png */; };
+		7B2D2428143288D700641B85 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D241B143288D700641B85 /* down.png */; };
+		7B2D2429143288D700641B85 /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D241C143288D700641B85 /* down@2x.png */; };
+		7B2D242A143288D700641B85 /* Overlay in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D241D143288D700641B85 /* Overlay */; };
+		7B2D242B143288D700641B85 /* UAInboxLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D241E143288D700641B85 /* UAInboxLocalization.bundle */; };
+		7B2D242C143288D700641B85 /* UAInboxMessageListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D241F143288D700641B85 /* UAInboxMessageListCell.xib */; };
+		7B2D242D143288D700641B85 /* UAInboxMessageListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D2420143288D700641B85 /* UAInboxMessageListController.xib */; };
+		7B2D242E143288D700641B85 /* UAInboxMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D2421143288D700641B85 /* UAInboxMessageViewController.xib */; };
+		7B2D242F143288D700641B85 /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D2422143288D700641B85 /* uncheck.png */; };
+		7B2D2430143288D700641B85 /* uncheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D2423143288D700641B85 /* uncheck@2x.png */; };
+		7B2D2431143288D700641B85 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D2424143288D700641B85 /* up.png */; };
+		7B2D2432143288D700641B85 /* up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D2425143288D700641B85 /* up@2x.png */; };
+		7B2D24341432891300641B85 /* libUAirship-1.0.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D24331432891300641B85 /* libUAirship-1.0.7.a */; };
+		7B2D243D1432892E00641B85 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D24351432892E00641B85 /* CFNetwork.framework */; };
+		7B2D243E1432892E00641B85 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D24361432892E00641B85 /* CoreTelephony.framework */; };
+		7B2D243F1432892E00641B85 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D24371432892E00641B85 /* libsqlite3.dylib */; };
+		7B2D24401432892E00641B85 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D24381432892E00641B85 /* libz.dylib */; };
+		7B2D24411432892E00641B85 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D24391432892E00641B85 /* MobileCoreServices.framework */; };
+		7B2D24421432892E00641B85 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D243A1432892E00641B85 /* Security.framework */; };
+		7B2D24431432892E00641B85 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D243B1432892E00641B85 /* StoreKit.framework */; };
+		7B2D24441432892E00641B85 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D243C1432892E00641B85 /* SystemConfiguration.framework */; };
+		7B2D24471432897600641B85 /* UAInboxSplitUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D24461432897600641B85 /* UAInboxSplitUI.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B2D23DF1432877200641B85 /* SplitViewInboxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewInboxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B2D23E31432877200641B85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7B2D23E51432877200641B85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B2D23E71432877200641B85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7B2D23EB1432877200641B85 /* SplitViewInboxSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SplitViewInboxSample-Info.plist"; sourceTree = "<group>"; };
+		7B2D23ED1432877200641B85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B2D23EF1432877200641B85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B2D23F11432877200641B85 /* SplitViewInboxSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SplitViewInboxSample-Prefix.pch"; sourceTree = "<group>"; };
+		7B2D23F21432877200641B85 /* SplitViewInboxSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewInboxSampleAppDelegate.h; sourceTree = "<group>"; };
+		7B2D23F31432877200641B85 /* SplitViewInboxSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitViewInboxSampleAppDelegate.m; sourceTree = "<group>"; };
+		7B2D23F61432877200641B85 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		7B2D2400143288A300641B85 /* UABeveledLoadingIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UABeveledLoadingIndicator.h; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UABeveledLoadingIndicator.h; sourceTree = "<group>"; };
+		7B2D2401143288A300641B85 /* UABeveledLoadingIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UABeveledLoadingIndicator.m; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UABeveledLoadingIndicator.m; sourceTree = "<group>"; };
+		7B2D2402143288A300641B85 /* UAInboxAlertHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAInboxAlertHandler.h; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxAlertHandler.h; sourceTree = "<group>"; };
+		7B2D2403143288A300641B85 /* UAInboxAlertHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAInboxAlertHandler.m; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxAlertHandler.m; sourceTree = "<group>"; };
+		7B2D2404143288A300641B85 /* UAInboxMessageListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAInboxMessageListCell.h; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxMessageListCell.h; sourceTree = "<group>"; };
+		7B2D2405143288A300641B85 /* UAInboxMessageListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAInboxMessageListCell.m; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxMessageListCell.m; sourceTree = "<group>"; };
+		7B2D2406143288A300641B85 /* UAInboxMessageListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAInboxMessageListController.h; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxMessageListController.h; sourceTree = "<group>"; };
+		7B2D2407143288A300641B85 /* UAInboxMessageListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAInboxMessageListController.m; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxMessageListController.m; sourceTree = "<group>"; };
+		7B2D2408143288A300641B85 /* UAInboxMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAInboxMessageViewController.h; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxMessageViewController.h; sourceTree = "<group>"; };
+		7B2D2409143288A300641B85 /* UAInboxMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAInboxMessageViewController.m; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxMessageViewController.m; sourceTree = "<group>"; };
+		7B2D240A143288A300641B85 /* UAInboxNavUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAInboxNavUI.h; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxNavUI.h; sourceTree = "<group>"; };
+		7B2D240B143288A300641B85 /* UAInboxNavUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAInboxNavUI.m; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxNavUI.m; sourceTree = "<group>"; };
+		7B2D240C143288A300641B85 /* UAInboxOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAInboxOverlayController.h; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxOverlayController.h; sourceTree = "<group>"; };
+		7B2D240D143288A300641B85 /* UAInboxOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAInboxOverlayController.m; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxOverlayController.m; sourceTree = "<group>"; };
+		7B2D240E143288A300641B85 /* UAInboxUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAInboxUI.h; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxUI.h; sourceTree = "<group>"; };
+		7B2D240F143288A300641B85 /* UAInboxUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAInboxUI.m; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxUI.m; sourceTree = "<group>"; };
+		7B2D2419143288D700641B85 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = ../../Airship/UI/Default/Inbox/Resources/Shared/check.png; sourceTree = "<group>"; };
+		7B2D241A143288D700641B85 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "check@2x.png"; path = "../../Airship/UI/Default/Inbox/Resources/Shared/check@2x.png"; sourceTree = "<group>"; };
+		7B2D241B143288D700641B85 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = down.png; path = ../../Airship/UI/Default/Inbox/Resources/Shared/down.png; sourceTree = "<group>"; };
+		7B2D241C143288D700641B85 /* down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "down@2x.png"; path = "../../Airship/UI/Default/Inbox/Resources/Shared/down@2x.png"; sourceTree = "<group>"; };
+		7B2D241D143288D700641B85 /* Overlay */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Overlay; path = ../../Airship/UI/Default/Inbox/Resources/Shared/Overlay; sourceTree = "<group>"; };
+		7B2D241E143288D700641B85 /* UAInboxLocalization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = UAInboxLocalization.bundle; path = ../../Airship/UI/Default/Inbox/Resources/Shared/UAInboxLocalization.bundle; sourceTree = "<group>"; };
+		7B2D241F143288D700641B85 /* UAInboxMessageListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UAInboxMessageListCell.xib; path = ../../Airship/UI/Default/Inbox/Resources/Shared/UAInboxMessageListCell.xib; sourceTree = "<group>"; };
+		7B2D2420143288D700641B85 /* UAInboxMessageListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UAInboxMessageListController.xib; path = ../../Airship/UI/Default/Inbox/Resources/Shared/UAInboxMessageListController.xib; sourceTree = "<group>"; };
+		7B2D2421143288D700641B85 /* UAInboxMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UAInboxMessageViewController.xib; path = ../../Airship/UI/Default/Inbox/Resources/Shared/UAInboxMessageViewController.xib; sourceTree = "<group>"; };
+		7B2D2422143288D700641B85 /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uncheck.png; path = ../../Airship/UI/Default/Inbox/Resources/Shared/uncheck.png; sourceTree = "<group>"; };
+		7B2D2423143288D700641B85 /* uncheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "uncheck@2x.png"; path = "../../Airship/UI/Default/Inbox/Resources/Shared/uncheck@2x.png"; sourceTree = "<group>"; };
+		7B2D2424143288D700641B85 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = up.png; path = ../../Airship/UI/Default/Inbox/Resources/Shared/up.png; sourceTree = "<group>"; };
+		7B2D2425143288D700641B85 /* up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "up@2x.png"; path = "../../Airship/UI/Default/Inbox/Resources/Shared/up@2x.png"; sourceTree = "<group>"; };
+		7B2D24331432891300641B85 /* libUAirship-1.0.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.0.7.a"; path = "../Airship/libUAirship-1.0.7.a"; sourceTree = "<group>"; };
+		7B2D24351432892E00641B85 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7B2D24361432892E00641B85 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		7B2D24371432892E00641B85 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		7B2D24381432892E00641B85 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7B2D24391432892E00641B85 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7B2D243A1432892E00641B85 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7B2D243B1432892E00641B85 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		7B2D243C1432892E00641B85 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7B2D24451432897600641B85 /* UAInboxSplitUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAInboxSplitUI.h; sourceTree = "<group>"; };
+		7B2D24461432897600641B85 /* UAInboxSplitUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAInboxSplitUI.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B2D23DC1432877200641B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2D243D1432892E00641B85 /* CFNetwork.framework in Frameworks */,
+				7B2D243E1432892E00641B85 /* CoreTelephony.framework in Frameworks */,
+				7B2D243F1432892E00641B85 /* libsqlite3.dylib in Frameworks */,
+				7B2D24401432892E00641B85 /* libz.dylib in Frameworks */,
+				7B2D24411432892E00641B85 /* MobileCoreServices.framework in Frameworks */,
+				7B2D24421432892E00641B85 /* Security.framework in Frameworks */,
+				7B2D24431432892E00641B85 /* StoreKit.framework in Frameworks */,
+				7B2D24441432892E00641B85 /* SystemConfiguration.framework in Frameworks */,
+				7B2D24341432891300641B85 /* libUAirship-1.0.7.a in Frameworks */,
+				7B2D23E41432877200641B85 /* UIKit.framework in Frameworks */,
+				7B2D23E61432877200641B85 /* Foundation.framework in Frameworks */,
+				7B2D23E81432877200641B85 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B2D23D41432877200641B85 = {
+			isa = PBXGroup;
+			children = (
+				7B2D23E91432877200641B85 /* SplitViewInboxSample */,
+				7B2D23E21432877200641B85 /* Frameworks */,
+				7B2D23E01432877200641B85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B2D23E01432877200641B85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B2D23DF1432877200641B85 /* SplitViewInboxSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B2D23E21432877200641B85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B2D24351432892E00641B85 /* CFNetwork.framework */,
+				7B2D24361432892E00641B85 /* CoreTelephony.framework */,
+				7B2D24371432892E00641B85 /* libsqlite3.dylib */,
+				7B2D24381432892E00641B85 /* libz.dylib */,
+				7B2D24391432892E00641B85 /* MobileCoreServices.framework */,
+				7B2D243A1432892E00641B85 /* Security.framework */,
+				7B2D243B1432892E00641B85 /* StoreKit.framework */,
+				7B2D243C1432892E00641B85 /* SystemConfiguration.framework */,
+				7B2D24331432891300641B85 /* libUAirship-1.0.7.a */,
+				7B2D23E31432877200641B85 /* UIKit.framework */,
+				7B2D23E51432877200641B85 /* Foundation.framework */,
+				7B2D23E71432877200641B85 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B2D23E91432877200641B85 /* SplitViewInboxSample */ = {
+			isa = PBXGroup;
+			children = (
+				7B2D23F21432877200641B85 /* SplitViewInboxSampleAppDelegate.h */,
+				7B2D23F31432877200641B85 /* SplitViewInboxSampleAppDelegate.m */,
+				7B2D24451432897600641B85 /* UAInboxSplitUI.h */,
+				7B2D24461432897600641B85 /* UAInboxSplitUI.m */,
+				7B2D23FD143287A500641B85 /* Inbox UI */,
+				7B2D23EA1432877200641B85 /* Supporting Files */,
+			);
+			path = SplitViewInboxSample;
+			sourceTree = "<group>";
+		};
+		7B2D23EA1432877200641B85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B2D2418143288B200641B85 /* Inbox UI */,
+				7B2D23EB1432877200641B85 /* SplitViewInboxSample-Info.plist */,
+				7B2D23EC1432877200641B85 /* InfoPlist.strings */,
+				7B2D23F51432877200641B85 /* MainWindow.xib */,
+				7B2D23EF1432877200641B85 /* main.m */,
+				7B2D23F11432877200641B85 /* SplitViewInboxSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B2D23FD143287A500641B85 /* Inbox UI */ = {
+			isa = PBXGroup;
+			children = (
+				7B2D2400143288A300641B85 /* UABeveledLoadingIndicator.h */,
+				7B2D2401143288A300641B85 /* UABeveledLoadingIndicator.m */,
+				7B2D2402143288A300641B85 /* UAInboxAlertHandler.h */,
+				7B2D2403143288A300641B85 /* UAInboxAlertHandler.m */,
+				7B2D2404143288A300641B85 /* UAInboxMessageListCell.h */,
+				7B2D2405143288A300641B85 /* UAInboxMessageListCell.m */,
+				7B2D2406143288A300641B85 /* UAInboxMessageListController.h */,
+				7B2D2407143288A300641B85 /* UAInboxMessageListController.m */,
+				7B2D2408143288A300641B85 /* UAInboxMessageViewController.h */,
+				7B2D2409143288A300641B85 /* UAInboxMessageViewController.m */,
+				7B2D240A143288A300641B85 /* UAInboxNavUI.h */,
+				7B2D240B143288A300641B85 /* UAInboxNavUI.m */,
+				7B2D240C143288A300641B85 /* UAInboxOverlayController.h */,
+				7B2D240D143288A300641B85 /* UAInboxOverlayController.m */,
+				7B2D240E143288A300641B85 /* UAInboxUI.h */,
+				7B2D240F143288A300641B85 /* UAInboxUI.m */,
+			);
+			name = "Inbox UI";
+			sourceTree = "<group>";
+		};
+		7B2D2418143288B200641B85 /* Inbox UI */ = {
+			isa = PBXGroup;
+			children = (
+				7B2D2419143288D700641B85 /* check.png */,
+				7B2D241A143288D700641B85 /* check@2x.png */,
+				7B2D241B143288D700641B85 /* down.png */,
+				7B2D241C143288D700641B85 /* down@2x.png */,
+				7B2D241D143288D700641B85 /* Overlay */,
+				7B2D241E143288D700641B85 /* UAInboxLocalization.bundle */,
+				7B2D241F143288D700641B85 /* UAInboxMessageListCell.xib */,
+				7B2D2420143288D700641B85 /* UAInboxMessageListController.xib */,
+				7B2D2421143288D700641B85 /* UAInboxMessageViewController.xib */,
+				7B2D2422143288D700641B85 /* uncheck.png */,
+				7B2D2423143288D700641B85 /* uncheck@2x.png */,
+				7B2D2424143288D700641B85 /* up.png */,
+				7B2D2425143288D700641B85 /* up@2x.png */,
+			);
+			name = "Inbox UI";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B2D23DE1432877200641B85 /* SplitViewInboxSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B2D23FA1432877200641B85 /* Build configuration list for PBXNativeTarget "SplitViewInboxSample" */;
+			buildPhases = (
+				7B2D23DB1432877200641B85 /* Sources */,
+				7B2D23DC1432877200641B85 /* Frameworks */,
+				7B2D23DD1432877200641B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SplitViewInboxSample;
+			productName = SplitViewInboxSample;
+			productReference = 7B2D23DF1432877200641B85 /* SplitViewInboxSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B2D23D61432877200641B85 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 7B2D23D91432877200641B85 /* Build configuration list for PBXProject "SplitViewInboxSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7B2D23D41432877200641B85;
+			productRefGroup = 7B2D23E01432877200641B85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B2D23DE1432877200641B85 /* SplitViewInboxSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B2D23DD1432877200641B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2D23EE1432877200641B85 /* InfoPlist.strings in Resources */,
+				7B2D23F71432877200641B85 /* MainWindow.xib in Resources */,
+				7B2D2426143288D700641B85 /* check.png in Resources */,
+				7B2D2427143288D700641B85 /* check@2x.png in Resources */,
+				7B2D2428143288D700641B85 /* down.png in Resources */,
+				7B2D2429143288D700641B85 /* down@2x.png in Resources */,
+				7B2D242A143288D700641B85 /* Overlay in Resources */,
+				7B2D242B143288D700641B85 /* UAInboxLocalization.bundle in Resources */,
+				7B2D242C143288D700641B85 /* UAInboxMessageListCell.xib in Resources */,
+				7B2D242D143288D700641B85 /* UAInboxMessageListController.xib in Resources */,
+				7B2D242E143288D700641B85 /* UAInboxMessageViewController.xib in Resources */,
+				7B2D242F143288D700641B85 /* uncheck.png in Resources */,
+				7B2D2430143288D700641B85 /* uncheck@2x.png in Resources */,
+				7B2D2431143288D700641B85 /* up.png in Resources */,
+				7B2D2432143288D700641B85 /* up@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B2D23DB1432877200641B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2D23F01432877200641B85 /* main.m in Sources */,
+				7B2D23F41432877200641B85 /* SplitViewInboxSampleAppDelegate.m in Sources */,
+				7B2D2410143288A300641B85 /* UABeveledLoadingIndicator.m in Sources */,
+				7B2D2411143288A300641B85 /* UAInboxAlertHandler.m in Sources */,
+				7B2D2412143288A300641B85 /* UAInboxMessageListCell.m in Sources */,
+				7B2D2413143288A300641B85 /* UAInboxMessageListController.m in Sources */,
+				7B2D2414143288A300641B85 /* UAInboxMessageViewController.m in Sources */,
+				7B2D2415143288A300641B85 /* UAInboxNavUI.m in Sources */,
+				7B2D2416143288A300641B85 /* UAInboxOverlayController.m in Sources */,
+				7B2D2417143288A300641B85 /* UAInboxUI.m in Sources */,
+				7B2D24471432897600641B85 /* UAInboxSplitUI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B2D23EC1432877200641B85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B2D23ED1432877200641B85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7B2D23F51432877200641B85 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B2D23F61432877200641B85 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B2D23F81432877200641B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "../Airship/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		7B2D23F91432877200641B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "../Airship/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B2D23FB1432877200641B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SplitViewInboxSample/SplitViewInboxSample-Prefix.pch";
+				INFOPLIST_FILE = "SplitViewInboxSample/SplitViewInboxSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Airship\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7B2D23FC1432877200641B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SplitViewInboxSample/SplitViewInboxSample-Prefix.pch";
+				INFOPLIST_FILE = "SplitViewInboxSample/SplitViewInboxSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Airship\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B2D23D91432877200641B85 /* Build configuration list for PBXProject "SplitViewInboxSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B2D23F81432877200641B85 /* Debug */,
+				7B2D23F91432877200641B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B2D23FA1432877200641B85 /* Build configuration list for PBXNativeTarget "SplitViewInboxSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B2D23FB1432877200641B85 /* Debug */,
+				7B2D23FC1432877200641B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B2D23D61432877200641B85 /* Project object */;
+}
