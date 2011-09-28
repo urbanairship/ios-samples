@@ -51,7 +51,7 @@ SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
         self.localizationBundle = [NSBundle bundleWithPath:path];
         
         self.useOverlay = NO;
-        self.isVisible = NO;
+        self.isVisible = YES;
 
         /*
          * TODO: Setup split view and other initialization
