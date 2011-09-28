@@ -8,6 +8,7 @@
 
 #import "UAirship.h"
 #import "UAInboxSplitUI.h"
+#import "UAInboxMessageList.h"
 #import "SplitViewInboxSampleAppDelegate.h"
 
 @implementation SplitViewInboxSampleAppDelegate
