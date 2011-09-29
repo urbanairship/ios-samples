@@ -8,6 +8,8 @@
 
 #import "TabBarInboxSampleAppDelegate.h"
 #import "UAirship.h"
+#import "UAInboxMessageList.h"
+#import "UAInboxTabUI.h"
 
 @implementation TabBarInboxSampleAppDelegate
 

@@ -7,7 +7,9 @@
 //
 
 #import "UAInboxAlertHandler.h"
+#import "UAInboxMessageList.h"
 #import "UAInboxMessageListController.h"
+#import "UAInboxOverlayController.h"
 #import "UAInboxTabUI.h"
 
 @interface UAInboxTabUI ()
