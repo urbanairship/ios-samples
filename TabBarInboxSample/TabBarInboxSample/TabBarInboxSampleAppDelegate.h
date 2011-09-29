@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TabBarInboxSampleAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate>
+@interface TabBarInboxSampleAppDelegate : NSObject <UIApplicationDelegate>
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
-@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 
 @end

@@ -6,14 +6,17 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+
 #import "UAInbox.h"
 #import "UAInboxPushHandler.h"
 
+@class UAInboxAlertHandler;
+
 @interface UAInboxTabUI : NSObject<UAInboxUIProtocol>
 
-- (void)quitInbox;
-
 SINGLETON_INTERFACE(UAInboxTabUI);
+
+- (void)quitInbox;
 
 @property (nonatomic, assign) BOOL useOverlay;
 @property (nonatomic, retain) NSBundle* localizationBundle;

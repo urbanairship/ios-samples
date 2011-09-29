@@ -6,20 +6,17 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "TabBarInboxSampleAppDelegate.h"
 #import "UAirship.h"
-#import "UAInboxMessageList.h"
 #import "UAInboxTabUI.h"
+#import "UAInboxMessageList.h"
+#import "TabBarInboxSampleAppDelegate.h"
 
 @implementation TabBarInboxSampleAppDelegate
 
 @synthesize window = _window;
-@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window.rootViewController = self.tabBarController;
-    [self.window makeKeyAndVisible];
     // Register for notifications
     [[UIApplication sharedApplication]
      registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
@@ -29,6 +26,7 @@
     /*
      * TODO: Initialize Airship and root view controller
      */
+    [self.window makeKeyAndVisible];
     
     return NO;
 }
@@ -36,7 +34,7 @@
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
-     * TODO: Set a badge number, if any.
+     * TODO: Display a badge number, if any
      */
 }
 
@@ -51,7 +49,7 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     /*
-     * TODO: Reload message list.
+     * TODO: Reload message list
      */
 }
 
@@ -70,22 +68,7 @@
 - (void)dealloc
 {
     [_window release];
-    [_tabBarController release];
     [super dealloc];
 }
-
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
-{
-}
-*/
-
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
-{
-}
-*/
 
 @end

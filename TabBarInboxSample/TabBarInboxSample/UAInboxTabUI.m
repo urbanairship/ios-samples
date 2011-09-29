@@ -6,6 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import "MainViewController.h"
 #import "UAInboxAlertHandler.h"
 #import "UAInboxMessageList.h"
 #import "UAInboxMessageListController.h"
@@ -20,23 +21,24 @@
 
 @end
 
+
 @implementation UAInboxTabUI
 
 @synthesize useOverlay;
 @synthesize localizationBundle;
 @synthesize tabBarController;
+@synthesize isVisible;
 @synthesize alertHandler;
 @synthesize mlc;
-@synthesize isVisible;
 
 SINGLETON_IMPLEMENTATION(UAInboxTabUI);
 
 - (void)dealloc
 {
+    RELEASE_SAFELY(localizationBundle);
     RELEASE_SAFELY(tabBarController);
     RELEASE_SAFELY(alertHandler);
     RELEASE_SAFELY(mlc);
-    RELEASE_SAFELY(localizationBundle);
     [super dealloc];
 }
 
@@ -52,43 +54,43 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
         self.isVisible = YES;
         
         /*
-         * Tab bar initialization is done in the NIB file. Here you can make minor tweaks.
+         * TODO: Setup tab bar controller and other initialization
          */
     }
     
     return self;
 }
 
-- (void) quitInbox
+- (void)quitInbox
 {
     /*
-     * TODO: Close the inbox.
+     * TODO: Quit inbox.
      */
 }
 
-+ (void) quitInbox
++ (void)quitInbox
 {
-    [[self shared] quitInbox];
+    [[self shared]quitInbox];
 }
 
-+ (void) loadLaunchMessage
++ (void)loadLaunchMessage
 {
     /*
      * TODO: Load a launch message, if any.
      */
 }
 
-+ (void) displayInbox:(UIViewController *)viewController animated:(BOOL)animated
++ (void)displayInbox:(UIViewController *)viewController animated:(BOOL)animated
 {
     /*
-     * TODO: Display a list of messages.
+     * TODO: Display a list of messages
      */
 }
 
-+ (void) displayMessage:(UIViewController *)viewController message:(NSString *)messageID
++ (void)displayMessage:(UIViewController *)viewController message:(NSString *)messageID
 {
     /*
-     * TODO: Display an individual message.
+     * TODO: Display an individual message
      */
 }
 

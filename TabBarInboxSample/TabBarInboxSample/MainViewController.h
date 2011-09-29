@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  MainViewController.h
 //  TabBarInboxSample
 //
 //  Created by Jimmy Dee on 9/29/11.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface MainViewController : UIViewController
 
 @end
