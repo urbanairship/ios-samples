@@ -53,16 +53,9 @@ SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
         self.useOverlay = NO;
         self.isVisible = YES;
 
-        // Set up the list and message view controllers for the master and detail panels, respectively.
-        mlc = [[UAInboxMessageListController alloc] initWithNibName:@"UAInboxMessageListController" bundle:nil];
-        mvc = [[UAInboxMessageViewController alloc] initWithNibName:@"UAInboxMessageViewController" bundle:nil];
-
-        // Set up the main split view controller
-        splitViewController = [[UISplitViewController alloc]init];
-        splitViewController.viewControllers = [NSArray arrayWithObjects:mlc, mvc, nil];
-
-        // Handler for rich push notification
-        alertHandler = [[UAInboxAlertHandler alloc] init];
+        /*
+         * TODO: Setup split view and other initialization
+         */
     }
     
     return self;
@@ -70,7 +63,10 @@ SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
 
 - (void)quitInbox
 {
-    self.isVisible = NO;
+    /*
+     * TODO: Implement quitInbox
+     */
+    
 }
 
 + (void)quitInbox
@@ -78,37 +74,28 @@ SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
     [[UAInboxSplitUI shared] quitInbox];
 }
 
-+ (void)loadLaunchMessage {
-    // if pushhandler has a messageID load it
-    UAInboxPushHandler *pushHandler = [UAInbox shared].pushHandler;
-    if (pushHandler.viewingMessageID && pushHandler.hasLaunchMessage) {
-        UAInboxMessage *msg = [[UAInbox shared].messageList messageForID:pushHandler.viewingMessageID];
-        if (!msg) {
-            return;
-        }
-
-        [UAInbox displayMessage:[self shared].mlc message:pushHandler.viewingMessageID];
-
-        pushHandler.viewingMessageID = nil;
-        pushHandler.hasLaunchMessage = NO;
-    }
++ (void)loadLaunchMessage
+{
+    /*
+     * TODO: Display a launch message, if any
+     */
+    
 }
 
 + (void)displayInbox:(UIViewController *)viewController animated:(BOOL)animated
 {
-    [self shared].isVisible = YES;
+    /*
+     * TODO: Display the inbox view controller
+     */
+   
 }
 
 + (void)displayMessage:(UIViewController *)viewController message:(NSString *)messageID
 {
-    NSLog(@"displaying message %@", messageID);
-    [[UAInboxSplitUI shared].mvc loadMessageForID:messageID];
+    /*
+     * TODO: Display the requested message
+     */
+    
 }
 
-- (void)newMessageArrived:(NSDictionary *)message
-{
-    NSString* alertText = [[message objectForKey: @"aps"] objectForKey: @"alert"];
-    UALOG(@"new message received: %@", alertText);
-    [alertHandler showNewMessageAlert:alertText];
-}
 @end

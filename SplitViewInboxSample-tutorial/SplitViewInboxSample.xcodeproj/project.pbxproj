@@ -45,7 +45,6 @@
 		7B2D24431432892E00641B85 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D243B1432892E00641B85 /* StoreKit.framework */; };
 		7B2D24441432892E00641B85 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D243C1432892E00641B85 /* SystemConfiguration.framework */; };
 		7B2D24471432897600641B85 /* UAInboxSplitUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D24461432897600641B85 /* UAInboxSplitUI.m */; };
-		7B649CD31433B2E9003A35AC /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B649CD21433B2E9003A35AC /* AirshipConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,7 +99,6 @@
 		7B2D243C1432892E00641B85 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7B2D24451432897600641B85 /* UAInboxSplitUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAInboxSplitUI.h; sourceTree = "<group>"; };
 		7B2D24461432897600641B85 /* UAInboxSplitUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAInboxSplitUI.m; sourceTree = "<group>"; };
-		7B649CD21433B2E9003A35AC /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = AirshipConfig.plist; path = "../../../uagit/ios-library/InboxSample/AirshipConfig.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +176,6 @@
 		7B2D23EA1432877200641B85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B649CD21433B2E9003A35AC /* AirshipConfig.plist */,
 				7B2D2418143288B200641B85 /* Inbox UI */,
 				7B2D23EB1432877200641B85 /* SplitViewInboxSample-Info.plist */,
 				7B2D23EC1432877200641B85 /* InfoPlist.strings */,
@@ -294,7 +291,6 @@
 				7B2D2430143288D700641B85 /* uncheck@2x.png in Resources */,
 				7B2D2431143288D700641B85 /* up.png in Resources */,
 				7B2D2432143288D700641B85 /* up@2x.png in Resources */,
-				7B649CD31433B2E9003A35AC /* AirshipConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +342,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -371,6 +368,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -435,7 +433,6 @@
 				7B2D23FC1432877200641B85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

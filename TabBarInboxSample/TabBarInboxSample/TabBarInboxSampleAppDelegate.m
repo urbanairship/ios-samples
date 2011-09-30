@@ -23,19 +23,51 @@
                                          UIRemoteNotificationTypeSound |
                                          UIRemoteNotificationTypeAlert)];
     
-    /*
-     * TODO: Initialize Airship and root view controller
-     */
+    
+    //Init Airship launch options
+    NSMutableDictionary *takeOffOptions = [[[NSMutableDictionary alloc] init] autorelease];
+    [takeOffOptions setValue:launchOptions forKey:UAirshipTakeOffOptionsLaunchOptionsKey];
+    
+    // Create Airship singleton that's used to talk to Urban Airship servers.
+    // Please populate AirshipConfig.plist with your info from http://go.urbanairship.com
+    [UAirship takeOff:takeOffOptions];
+    
+    [self loadInbox];
+  
+    // Set the application to use the UAInboxSplitUI we've defined here.
+    [UAInbox useCustomUI:[UAInboxTabUI class]];
+
+    [self.window setRootViewController:[UAInboxTabUI shared].tabBarController];
     [self.window makeKeyAndVisible];
     
+    [UAInboxTabUI shared].useOverlay = YES;
+    [UAInbox shared].pushHandler.delegate = [UAInboxTabUI shared];
+    
+    [UAInboxPushHandler handleLaunchOptions:launchOptions];
+    
+    if([[UAInbox shared].pushHandler hasLaunchMessage]) {
+        [[[UAInbox shared] uiClass] loadLaunchMessage];
+    }
+        
     return NO;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    UALOG(@"APN device token: %@", deviceToken);
+    // Updates the device token and registers the token with UA
+    [[UAirship shared] registerDeviceToken:deviceToken];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *) error {
+    UALOG(@"did Fail To Register For Remote Notifications With Error: %@", error);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-    /*
-     * TODO: Display a badge number, if any
-     */
+    UAInbox *inbox = [UAInbox shared];
+    if (inbox != nil && inbox.messageList != nil && inbox.messageList.unreadCount >= 0) {
+        [[UIApplication sharedApplication] setApplicationIconBadgeNumber:inbox.messageList.unreadCount];
+    }
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
@@ -48,9 +80,7 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-    /*
-     * TODO: Reload message list
-     */
+    [self loadInbox];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -65,10 +95,37 @@
     [UAirship land];
 }
 
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [UAInboxPushHandler handleNotification:userInfo];
+}
+
 - (void)dealloc
 {
     [_window release];
     [super dealloc];
+}
+
+- (void)loadInbox
+{
+    // Reload the message list when the app is foregrounded
+    UAInbox *inbox = [UAInbox shared];
+    if (inbox != nil && inbox.messageList != nil) {
+        [inbox.messageList retrieveMessageList];
+    }   
+}
+
+- (void)setInboxBadgeValue
+{
+    UAInbox *inbox = [UAInbox shared];
+    int badgeNum = inbox.messageList.unreadCount;
+    if (badgeNum > 0) {
+        UALOG(@"Current badge value is %d", badgeNum);
+        [[UAInboxTabUI shared] setBadgeValue:[NSString stringWithFormat:@"%d", badgeNum]];
+    }
+    else {
+        UALOG(@"Current badge value is 0, removing");
+        [[UAInboxTabUI shared] setBadgeValue:nil];
+    }
 }
 
 @end

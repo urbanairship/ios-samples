@@ -10,6 +10,9 @@
 
 @interface TabBarInboxSampleAppDelegate : NSObject <UIApplicationDelegate>
 
+- (void)loadInbox;
+- (void)setInboxBadgeValue;
+
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
 @end

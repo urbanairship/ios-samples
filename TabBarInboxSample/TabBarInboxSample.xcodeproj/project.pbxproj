@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B1ECDB414361B49001E2999 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECDB014361B49001E2999 /* clock.png */; };
-		7B1ECDB514361B49001E2999 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECDB114361B49001E2999 /* clock@2x.png */; };
-		7B1ECDB614361B49001E2999 /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECDB214361B49001E2999 /* inbox.png */; };
-		7B1ECDB714361B49001E2999 /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECDB314361B49001E2999 /* inbox@2x.png */; };
+		7B1ECE0E143661E6001E2999 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECE0A143661E6001E2999 /* clock.png */; };
+		7B1ECE0F143661E6001E2999 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECE0B143661E6001E2999 /* clock@2x.png */; };
+		7B1ECE10143661E6001E2999 /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECE0C143661E6001E2999 /* inbox.png */; };
+		7B1ECE11143661E6001E2999 /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECE0D143661E6001E2999 /* inbox@2x.png */; };
 		7BC46FF314350C88008AD9A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC46FF214350C88008AD9A1 /* UIKit.framework */; };
 		7BC46FF514350C88008AD9A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC46FF414350C88008AD9A1 /* Foundation.framework */; };
 		7BC46FF714350C88008AD9A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC46FF614350C88008AD9A1 /* CoreGraphics.framework */; };
@@ -48,17 +48,18 @@
 		7BC4705014350D38008AD9A1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC4704814350D38008AD9A1 /* StoreKit.framework */; };
 		7BC4705114350D38008AD9A1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC4704914350D38008AD9A1 /* SystemConfiguration.framework */; };
 		7BC4705414350D85008AD9A1 /* UAInboxTabUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4705314350D85008AD9A1 /* UAInboxTabUI.m */; };
-		7BC4706A14351A53008AD9A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4706814351A53008AD9A1 /* MainViewController.m */; };
-		7BC4706B14351A53008AD9A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4706914351A53008AD9A1 /* MainViewController.xib */; };
-		7BC470A714351FD3008AD9A1 /* overlayCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC470A514351FD3008AD9A1 /* overlayCloseBtn.png */; };
-		7BC470A814351FD3008AD9A1 /* overlayCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC470A614351FD3008AD9A1 /* overlayCloseBtn@2x.png */; };
+		7BC470651435172F008AD9A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC470631435172F008AD9A1 /* MainViewController.m */; };
+		7BC470661435172F008AD9A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC470641435172F008AD9A1 /* MainViewController.xib */; };
+		7BC4707614351C80008AD9A1 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4707514351C80008AD9A1 /* AirshipConfig.plist */; };
+		7BC4709D14351F73008AD9A1 /* overlayCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4709914351F4B008AD9A1 /* overlayCloseBtn.png */; };
+		7BC4709E14351F73008AD9A1 /* overlayCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4709A14351F4B008AD9A1 /* overlayCloseBtn@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B1ECDB014361B49001E2999 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
-		7B1ECDB114361B49001E2999 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
-		7B1ECDB214361B49001E2999 /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
-		7B1ECDB314361B49001E2999 /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
+		7B1ECE0A143661E6001E2999 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		7B1ECE0B143661E6001E2999 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		7B1ECE0C143661E6001E2999 /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
+		7B1ECE0D143661E6001E2999 /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
 		7BC46FEE14350C88008AD9A1 /* TabBarInboxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarInboxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC46FF214350C88008AD9A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7BC46FF414350C88008AD9A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,11 +110,12 @@
 		7BC4704914350D38008AD9A1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7BC4705214350D85008AD9A1 /* UAInboxTabUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAInboxTabUI.h; sourceTree = "<group>"; };
 		7BC4705314350D85008AD9A1 /* UAInboxTabUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAInboxTabUI.m; sourceTree = "<group>"; };
-		7BC4706714351A52008AD9A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		7BC4706814351A53008AD9A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		7BC4706914351A53008AD9A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		7BC470A514351FD3008AD9A1 /* overlayCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlayCloseBtn.png; path = ../../Airship/UI/Default/Inbox/Resources/Shared/Overlay/overlayCloseBtn.png; sourceTree = "<group>"; };
-		7BC470A614351FD3008AD9A1 /* overlayCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "overlayCloseBtn@2x.png"; path = "../../Airship/UI/Default/Inbox/Resources/Shared/Overlay/overlayCloseBtn@2x.png"; sourceTree = "<group>"; };
+		7BC470621435172F008AD9A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7BC470631435172F008AD9A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7BC470641435172F008AD9A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		7BC4707514351C80008AD9A1 /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = AirshipConfig.plist; sourceTree = "<group>"; };
+		7BC4709914351F4B008AD9A1 /* overlayCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlayCloseBtn.png; path = ../../Airship/UI/Default/Inbox/Resources/Shared/Overlay/overlayCloseBtn.png; sourceTree = "<group>"; };
+		7BC4709A14351F4B008AD9A1 /* overlayCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "overlayCloseBtn@2x.png"; path = "../../Airship/UI/Default/Inbox/Resources/Shared/Overlay/overlayCloseBtn@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,9 +180,9 @@
 		7BC46FF814350C88008AD9A1 /* TabBarInboxSample */ = {
 			isa = PBXGroup;
 			children = (
-				7BC4706714351A52008AD9A1 /* MainViewController.h */,
-				7BC4706814351A53008AD9A1 /* MainViewController.m */,
-				7BC4706914351A53008AD9A1 /* MainViewController.xib */,
+				7BC470621435172F008AD9A1 /* MainViewController.h */,
+				7BC470631435172F008AD9A1 /* MainViewController.m */,
+				7BC470641435172F008AD9A1 /* MainViewController.xib */,
 				7BC4700414350C88008AD9A1 /* MainWindow.xib */,
 				7BC4700114350C88008AD9A1 /* TabBarInboxSampleAppDelegate.h */,
 				7BC4700214350C88008AD9A1 /* TabBarInboxSampleAppDelegate.m */,
@@ -195,10 +197,11 @@
 		7BC46FF914350C88008AD9A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B1ECDB014361B49001E2999 /* clock.png */,
-				7B1ECDB114361B49001E2999 /* clock@2x.png */,
-				7B1ECDB214361B49001E2999 /* inbox.png */,
-				7B1ECDB314361B49001E2999 /* inbox@2x.png */,
+				7B1ECE0A143661E6001E2999 /* clock.png */,
+				7B1ECE0B143661E6001E2999 /* clock@2x.png */,
+				7B1ECE0C143661E6001E2999 /* inbox.png */,
+				7B1ECE0D143661E6001E2999 /* inbox@2x.png */,
+				7BC4707514351C80008AD9A1 /* AirshipConfig.plist */,
 				7BC4700D14350CD2008AD9A1 /* Inbox UI */,
 				7BC46FFA14350C88008AD9A1 /* TabBarInboxSample-Info.plist */,
 				7BC46FFB14350C88008AD9A1 /* InfoPlist.strings */,
@@ -238,7 +241,8 @@
 				7BC4700F14350CE7008AD9A1 /* check@2x.png */,
 				7BC4701014350CE7008AD9A1 /* down.png */,
 				7BC4701114350CE7008AD9A1 /* down@2x.png */,
-				7BC470A314351FC0008AD9A1 /* Overlay */,
+				7BC4709914351F4B008AD9A1 /* overlayCloseBtn.png */,
+				7BC4709A14351F4B008AD9A1 /* overlayCloseBtn@2x.png */,
 				7BC4701314350CE7008AD9A1 /* UAInboxLocalization.bundle */,
 				7BC4701414350CE7008AD9A1 /* UAInboxMessageListCell.xib */,
 				7BC4701514350CE7008AD9A1 /* UAInboxMessageListController.xib */,
@@ -249,15 +253,6 @@
 				7BC4701A14350CE7008AD9A1 /* up@2x.png */,
 			);
 			name = "Inbox UI";
-			sourceTree = "<group>";
-		};
-		7BC470A314351FC0008AD9A1 /* Overlay */ = {
-			isa = PBXGroup;
-			children = (
-				7BC470A514351FD3008AD9A1 /* overlayCloseBtn.png */,
-				7BC470A614351FD3008AD9A1 /* overlayCloseBtn@2x.png */,
-			);
-			name = Overlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +302,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC4709D14351F73008AD9A1 /* overlayCloseBtn.png in Resources */,
+				7BC4709E14351F73008AD9A1 /* overlayCloseBtn@2x.png in Resources */,
 				7BC46FFD14350C88008AD9A1 /* InfoPlist.strings in Resources */,
 				7BC4700614350C88008AD9A1 /* MainWindow.xib in Resources */,
 				7BC4701B14350CE7008AD9A1 /* check.png in Resources */,
@@ -321,13 +318,12 @@
 				7BC4702514350CE7008AD9A1 /* uncheck@2x.png in Resources */,
 				7BC4702614350CE7008AD9A1 /* up.png in Resources */,
 				7BC4702714350CE7008AD9A1 /* up@2x.png in Resources */,
-				7BC4706B14351A53008AD9A1 /* MainViewController.xib in Resources */,
-				7BC470A714351FD3008AD9A1 /* overlayCloseBtn.png in Resources */,
-				7BC470A814351FD3008AD9A1 /* overlayCloseBtn@2x.png in Resources */,
-				7B1ECDB414361B49001E2999 /* clock.png in Resources */,
-				7B1ECDB514361B49001E2999 /* clock@2x.png in Resources */,
-				7B1ECDB614361B49001E2999 /* inbox.png in Resources */,
-				7B1ECDB714361B49001E2999 /* inbox@2x.png in Resources */,
+				7BC470661435172F008AD9A1 /* MainViewController.xib in Resources */,
+				7BC4707614351C80008AD9A1 /* AirshipConfig.plist in Resources */,
+				7B1ECE0E143661E6001E2999 /* clock.png in Resources */,
+				7B1ECE0F143661E6001E2999 /* clock@2x.png in Resources */,
+				7B1ECE10143661E6001E2999 /* inbox.png in Resources */,
+				7B1ECE11143661E6001E2999 /* inbox@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +345,7 @@
 				7BC4703E14350CF4008AD9A1 /* UAInboxOverlayController.m in Sources */,
 				7BC4703F14350CF4008AD9A1 /* UAInboxUI.m in Sources */,
 				7BC4705414350D85008AD9A1 /* UAInboxTabUI.m in Sources */,
-				7BC4706A14351A53008AD9A1 /* MainViewController.m in Sources */,
+				7BC470651435172F008AD9A1 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +376,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -405,7 +400,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;

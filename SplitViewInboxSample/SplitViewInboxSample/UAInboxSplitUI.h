@@ -11,7 +11,7 @@
 
 @class UAInboxAlertHandler;
 
-@interface UAInboxSplitUI : NSObject<UAInboxUIProtocol>
+@interface UAInboxSplitUI : NSObject<UAInboxUIProtocol, UAInboxPushHandlerDelegate>
 
 SINGLETON_INTERFACE(UAInboxSplitUI);
 

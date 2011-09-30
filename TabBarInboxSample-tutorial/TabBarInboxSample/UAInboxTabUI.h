@@ -12,12 +12,11 @@
 
 @class UAInboxAlertHandler;
 
-@interface UAInboxTabUI : NSObject<UAInboxUIProtocol, UAInboxPushHandlerDelegate, UAInboxMessageListObserver>
+@interface UAInboxTabUI : NSObject<UAInboxUIProtocol>
 
 SINGLETON_INTERFACE(UAInboxTabUI);
 
 - (void)quitInbox;
-- (void)setCurrentBadgeNum;
 
 @property (nonatomic, retain) NSString* badgeValue;
 @property (nonatomic, assign) BOOL useOverlay;
