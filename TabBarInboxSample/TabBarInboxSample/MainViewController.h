@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController {
+    UITextView *timeTextView;
+    UILabel *timeLabel;
+}
+
+- (void)displayCurrentTime;
+
+@property (nonatomic, retain) NSTimer* timer;
+@property (nonatomic, retain) IBOutlet UILabel *timeLabel;
 
 @end
