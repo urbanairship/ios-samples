@@ -18,6 +18,7 @@ SINGLETON_INTERFACE(UAInboxTabUI);
 
 - (void)quitInbox;
 
+@property (nonatomic, retain) NSString* badgeValue;
 @property (nonatomic, assign) BOOL useOverlay;
 @property (nonatomic, retain) NSBundle* localizationBundle;
 @property (nonatomic, retain) UITabBarController* tabBarController;

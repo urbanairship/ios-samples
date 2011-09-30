@@ -30,6 +30,7 @@
 @synthesize isVisible;
 @synthesize alertHandler;
 @synthesize mlc;
+@synthesize badgeValue;
 
 SINGLETON_IMPLEMENTATION(UAInboxTabUI);
 
@@ -39,6 +40,7 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
     RELEASE_SAFELY(tabBarController);
     RELEASE_SAFELY(alertHandler);
     RELEASE_SAFELY(mlc);
+    RELEASE_SAFELY(badgeValue);
     [super dealloc];
 }
 
