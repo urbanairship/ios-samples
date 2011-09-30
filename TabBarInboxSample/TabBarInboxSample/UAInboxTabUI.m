@@ -58,6 +58,9 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
         /*
          * TODO: Setup tab bar controller and other initialization
          */
+        
+        // set the status bar to black
+        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackOpaque;
     }
     
     return self;
