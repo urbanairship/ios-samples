@@ -116,16 +116,7 @@
 
 - (void)setInboxBadgeValue
 {
-    UAInbox *inbox = [UAInbox shared];
-    int badgeNum = inbox.messageList.unreadCount;
-    if (badgeNum > 0) {
-        UALOG(@"Current badge value is %d", badgeNum);
-        [[UAInboxTabUI shared] setBadgeValue:[NSString stringWithFormat:@"%d", badgeNum]];
-    }
-    else {
-        UALOG(@"Current badge value is 0, removing");
-        [[UAInboxTabUI shared] setBadgeValue:nil];
-    }
+    [[UAInboxTabUI shared] setCurrentBadgeNum];
 }
 
 @end
