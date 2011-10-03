@@ -34,6 +34,11 @@
 
 SINGLETON_IMPLEMENTATION(UAInboxTabUI);
 
++ (void)quitInbox
+{
+    [[self shared]quitInbox];
+}
+
 - (void)dealloc
 {
     RELEASE_SAFELY(localizationBundle);
@@ -56,7 +61,7 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
         self.isVisible = YES;
         
         /*
-         * TODO: Setup tab bar controller and other initialization
+         * Step 1a: Setup tab bar controller and other initialization
          */
         
         // set the status bar to black
@@ -66,36 +71,32 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
     return self;
 }
 
-- (void)quitInbox
-{
-    /*
-     * TODO: Quit inbox.
-     */
-}
-
-+ (void)quitInbox
-{
-    [[self shared]quitInbox];
-}
-
-+ (void)loadLaunchMessage
-{
-    /*
-     * TODO: Load a launch message, if any.
-     */
-}
 
 + (void)displayInbox:(UIViewController *)viewController animated:(BOOL)animated
 {
     /*
-     * TODO: Display a list of messages
+     * Step 1b: Display a list of messages
+     */
+}
+
+- (void)quitInbox
+{
+    /*
+     * Step 1c: Quit inbox.
      */
 }
 
 + (void)displayMessage:(UIViewController *)viewController message:(NSString *)messageID
 {
     /*
-     * TODO: Display an individual message
+     * Step 1d: Display an individual message
+     */
+}
+
++ (void)loadLaunchMessage
+{
+    /*
+     * Step 1e: Load a launch message, if any.
      */
 }
 

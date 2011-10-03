@@ -24,9 +24,14 @@
                                          UIRemoteNotificationTypeAlert)];
     
     /*
-     * TODO: Initialize Airship and root view controller
+     * Step 2b: Initialize Airship and root view controller
      */
+    
     [self.window makeKeyAndVisible];
+    
+    /*
+     * Step 3b: Connect the push handler delegate
+     */
     
     return NO;
 }
@@ -34,7 +39,7 @@
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
-     * TODO: Display a badge number, if any
+     * Step 2e: Display a badge number, if any
      */
 }
 
@@ -49,7 +54,7 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     /*
-     * TODO: Reload message list
+     * Step 2d: Reload message list
      */
 }
 
