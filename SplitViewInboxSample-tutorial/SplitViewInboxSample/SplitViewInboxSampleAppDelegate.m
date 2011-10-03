@@ -24,7 +24,7 @@
                                          UIRemoteNotificationTypeAlert)];
     
     /*
-     * TODO: Initialize Airship and root view controller
+     * Step 2a: Initialize Airship and root view controller
      */
 
     [self.window makeKeyAndVisible];
@@ -34,7 +34,7 @@
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
-     * TODO: Set an icon badge number, if any.
+     * Step 2d: Set an icon badge number, if any.
      */
 }
 
@@ -49,7 +49,7 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     /*
-     * TODO: Reload inbox messages
+     * Step 2c: Reload inbox messages
      */
 }
 

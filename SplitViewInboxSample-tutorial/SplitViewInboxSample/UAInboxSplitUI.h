@@ -15,6 +15,8 @@
 
 SINGLETON_INTERFACE(UAInboxSplitUI);
 
+- (void)quitInbox;
+
 @property (nonatomic, assign) BOOL useOverlay;
 @property (nonatomic, retain) NSBundle* localizationBundle;
 @property (nonatomic, retain) UISplitViewController* splitViewController;

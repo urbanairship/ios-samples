@@ -32,6 +32,11 @@
 
 SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
 
++ (void)quitInbox
+{
+    [[UAInboxSplitUI shared] quitInbox];
+}
+
 - (void)dealloc
 {
     RELEASE_SAFELY(localizationBundle);
@@ -54,46 +59,41 @@ SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
         self.isVisible = YES;
 
         /*
-         * TODO: Setup split view and other initialization
+         * Step 1a: Setup split view and other initialization
          */
     }
     
     return self;
 }
 
-- (void)quitInbox
-{
-    /*
-     * TODO: Implement quitInbox
-     */
-    
-}
-
-+ (void)quitInbox
-{
-    [[UAInboxSplitUI shared] quitInbox];
-}
-
-+ (void)loadLaunchMessage
-{
-    /*
-     * TODO: Display a launch message, if any
-     */
-    
-}
-
 + (void)displayInbox:(UIViewController *)viewController animated:(BOOL)animated
 {
     /*
-     * TODO: Display the inbox view controller
+     * Step 1b: Display the inbox view controller
      */
-   
+    
+}
+
+- (void)quitInbox
+{
+    /*
+     * Step 1c: Implement quitInbox
+     */
+    
 }
 
 + (void)displayMessage:(UIViewController *)viewController message:(NSString *)messageID
 {
     /*
-     * TODO: Display the requested message
+     * Step 1d: Display the requested message
+     */
+    
+}
+
++ (void)loadLaunchMessage
+{
+    /*
+     * Step 1e: Display a launch message, if any
      */
     
 }
