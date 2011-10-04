@@ -12,8 +12,9 @@
 
 - (NSString*)callbackArguments:(NSArray *)args withOptions:(NSDictionary *)options
 {
+    NSString* varName = [args objectAtIndex:0];
     NSString* deviceName = [[UIDevice currentDevice] name];
-    return [NSString stringWithFormat:@"var span = document.getElementById('device_name'); span.innerHTML = \"%@\";", deviceName];
+    return [NSString stringWithFormat:@"%@.deviceName = \"%@\"; %@.finishedLoading();", varName, deviceName, varName];
 }
 
 @end
