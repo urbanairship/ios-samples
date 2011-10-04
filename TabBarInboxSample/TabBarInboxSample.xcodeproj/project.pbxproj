@@ -53,6 +53,7 @@
 		7BC4707614351C80008AD9A1 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4707514351C80008AD9A1 /* AirshipConfig.plist */; };
 		7BC4709D14351F73008AD9A1 /* overlayCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4709914351F4B008AD9A1 /* overlayCloseBtn.png */; };
 		7BC4709E14351F73008AD9A1 /* overlayCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4709A14351F4B008AD9A1 /* overlayCloseBtn@2x.png */; };
+		7BD03FD8143B8139001E5D3E /* JSDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD03FD7143B8139001E5D3E /* JSDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,8 @@
 		7BC4707514351C80008AD9A1 /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = AirshipConfig.plist; sourceTree = "<group>"; };
 		7BC4709914351F4B008AD9A1 /* overlayCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlayCloseBtn.png; path = ../../Airship/UI/Default/Inbox/Resources/Shared/Overlay/overlayCloseBtn.png; sourceTree = "<group>"; };
 		7BC4709A14351F4B008AD9A1 /* overlayCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "overlayCloseBtn@2x.png"; path = "../../Airship/UI/Default/Inbox/Resources/Shared/Overlay/overlayCloseBtn@2x.png"; sourceTree = "<group>"; };
+		7BD03FD6143B8139001E5D3E /* JSDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDelegate.h; sourceTree = "<group>"; };
+		7BD03FD7143B8139001E5D3E /* JSDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,8 @@
 		7BC46FF814350C88008AD9A1 /* TabBarInboxSample */ = {
 			isa = PBXGroup;
 			children = (
+				7BD03FD6143B8139001E5D3E /* JSDelegate.h */,
+				7BD03FD7143B8139001E5D3E /* JSDelegate.m */,
 				7BC470621435172F008AD9A1 /* MainViewController.h */,
 				7BC470631435172F008AD9A1 /* MainViewController.m */,
 				7BC470641435172F008AD9A1 /* MainViewController.xib */,
@@ -346,6 +351,7 @@
 				7BC4703F14350CF4008AD9A1 /* UAInboxUI.m in Sources */,
 				7BC4705414350D85008AD9A1 /* UAInboxTabUI.m in Sources */,
 				7BC470651435172F008AD9A1 /* MainViewController.m in Sources */,
+				7BD03FD8143B8139001E5D3E /* JSDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +382,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jimmy Dee (492446EY7H)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -390,6 +397,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PROVISIONING_PROFILE = "7C628EC8-D7CC-4C80-9AE1-3EF678B66850";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../Airship/**";
 			};
@@ -400,6 +408,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jimmy Dee (492446EY7H)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -408,6 +417,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "7C628EC8-D7CC-4C80-9AE1-3EF678B66850";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../Airship/**";
 				VALIDATE_PRODUCT = YES;

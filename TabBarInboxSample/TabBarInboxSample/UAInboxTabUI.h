@@ -23,5 +23,6 @@ SINGLETON_INTERFACE(UAInboxTabUI);
 @property (nonatomic, assign) BOOL useOverlay;
 @property (nonatomic, retain) NSBundle* localizationBundle;
 @property (nonatomic, retain) UITabBarController* tabBarController;
+@property (nonatomic, retain) id<UAInboxJavaScriptDelegate> jsDelegate;
 
 @end

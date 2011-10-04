@@ -6,6 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import "JSDelegate.h"
 #import "MainViewController.h"
 #import "UAInboxAlertHandler.h"
 #import "UAInboxMessageList.h"
@@ -31,6 +32,7 @@
 @synthesize alertHandler;
 @synthesize mlc;
 @synthesize badgeValue;
+@synthesize jsDelegate;
 
 SINGLETON_IMPLEMENTATION(UAInboxTabUI);
 
@@ -40,6 +42,7 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
     RELEASE_SAFELY(tabBarController);
     RELEASE_SAFELY(alertHandler);
     RELEASE_SAFELY(mlc);
+    RELEASE_SAFELY(jsDelegate);
     [super dealloc];
 }
 
@@ -74,6 +77,11 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
         
         // add myself as a message list observer so I know when things change
         [[UAInbox shared].messageList addObserver:self];
+        
+        // The jsDelegate property on UAInbox is not retained, so we have to be sure to
+        // store it in a property that is.
+        jsDelegate = [[JSDelegate alloc]init];
+        [UAInbox shared].jsDelegate = jsDelegate;
         
         // set the status bar to black
         [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackOpaque;
