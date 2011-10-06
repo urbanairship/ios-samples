@@ -39,7 +39,7 @@
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
-     * Step 2e: Display a badge number, if any
+     * Step 2d: Display a badge number, if any
      */
 }
 
@@ -53,9 +53,6 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-    /*
-     * Step 2d: Reload message list
-     */
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

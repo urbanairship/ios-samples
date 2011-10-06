@@ -63,13 +63,8 @@
      */
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    
-    // Reload the message list when the app is foregrounded
-    UAInbox *inbox = [UAInbox shared];
-    if (inbox != nil && inbox.messageList != nil) {
-        [inbox.messageList retrieveMessageList];
-    }
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

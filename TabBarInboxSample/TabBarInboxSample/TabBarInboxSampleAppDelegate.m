@@ -80,7 +80,6 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-    [self loadInbox];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application

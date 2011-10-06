@@ -34,7 +34,7 @@
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
-     * Step 2d: Set an icon badge number, if any.
+     * Step 2c: Set an icon badge number, if any.
      */
 }
 
@@ -48,9 +48,6 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-    /*
-     * Step 2c: Reload inbox messages
-     */
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
