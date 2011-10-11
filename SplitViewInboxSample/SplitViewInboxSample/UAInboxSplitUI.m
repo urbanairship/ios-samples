@@ -17,16 +17,13 @@
 @property (nonatomic, retain) UAInboxAlertHandler *alertHandler;
 @property (nonatomic, retain) UAInboxMessageListController* mlc;
 @property (nonatomic, retain) UAInboxMessageViewController* mvc;
-@property (nonatomic, assign) BOOL isVisible;
 
 @end
 
 @implementation UAInboxSplitUI
-@synthesize useOverlay;
 @synthesize localizationBundle;
 @synthesize splitViewController;
 @synthesize alertHandler;
-@synthesize isVisible;
 @synthesize mlc;
 @synthesize mvc;
 
@@ -34,6 +31,8 @@ SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
 
 - (void)dealloc
 {
+    [[UAInbox shared].messageList removeObserver:mlc];
+    
     RELEASE_SAFELY(localizationBundle);
     RELEASE_SAFELY(alertHandler);
     RELEASE_SAFELY(splitViewController);
@@ -50,9 +49,11 @@ SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
         NSString* path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"UAInboxLocalization.bundle"];
         self.localizationBundle = [NSBundle bundleWithPath:path];
         
-        self.useOverlay = NO;
-        self.isVisible = YES;
-
+        
+        /*
+         * Step 1a: Setup split view and other initialization
+         */
+        
         // Set up the list and message view controllers for the master and detail panels, respectively.
         mlc = [[UAInboxMessageListController alloc] initWithNibName:@"UAInboxMessageListController" bundle:nil];
         mvc = [[UAInboxMessageViewController alloc] initWithNibName:@"UAInboxMessageViewController" bundle:nil];
@@ -63,6 +64,8 @@ SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
 
         // Handler for rich push notification
         alertHandler = [[UAInboxAlertHandler alloc] init];
+        
+        [[UAInbox shared].messageList addObserver:mlc];
     }
     
     return self;
@@ -70,7 +73,9 @@ SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
 
 - (void)quitInbox
 {
-    self.isVisible = NO;
+    /*
+     * Step 1c: Implement quitInbox
+     */
 }
 
 + (void)quitInbox
@@ -96,11 +101,16 @@ SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
 
 + (void)displayInbox:(UIViewController *)viewController animated:(BOOL)animated
 {
-    [self shared].isVisible = YES;
+    /*
+     * Step 1b: Display the inbox view controller
+     */
 }
 
 + (void)displayMessage:(UIViewController *)viewController message:(NSString *)messageID
 {
+    /*
+     * Step 1d: Display the requested message
+     */
     NSLog(@"displaying message %@", messageID);
     [[UAInboxSplitUI shared].mvc loadMessageForID:messageID];
 }
@@ -111,4 +121,5 @@ SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
     UALOG(@"new message received: %@", alertText);
     [alertHandler showNewMessageAlert:alertText];
 }
+
 @end

@@ -23,7 +23,10 @@
                                          UIRemoteNotificationTypeSound |
                                          UIRemoteNotificationTypeAlert)];
     
-    
+    /*
+     * Step 2b: Initialize Airship and root view controller
+     */
+
     //Init Airship launch options
     NSMutableDictionary *takeOffOptions = [[[NSMutableDictionary alloc] init] autorelease];
     [takeOffOptions setValue:launchOptions forKey:UAirshipTakeOffOptionsLaunchOptionsKey];
@@ -40,7 +43,10 @@
     [self.window setRootViewController:[UAInboxTabUI shared].tabBarController];
     [self.window makeKeyAndVisible];
     
-    [UAInboxTabUI shared].useOverlay = YES;
+    /*
+     * Step 3b: Connect the push handler delegate
+     */
+    
     [UAInbox shared].pushHandler.delegate = [UAInboxTabUI shared];
     
     [UAInboxPushHandler handleLaunchOptions:launchOptions];
@@ -64,6 +70,10 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
+    /*
+     * Step 2d: Display a badge number, if any
+     */
+    
     UAInbox *inbox = [UAInbox shared];
     if (inbox != nil && inbox.messageList != nil && inbox.messageList.unreadCount >= 0) {
         [[UIApplication sharedApplication] setApplicationIconBadgeNumber:inbox.messageList.unreadCount];

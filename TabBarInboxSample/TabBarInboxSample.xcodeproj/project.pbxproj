@@ -11,6 +11,8 @@
 		7B1ECE0F143661E6001E2999 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECE0B143661E6001E2999 /* clock@2x.png */; };
 		7B1ECE10143661E6001E2999 /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECE0C143661E6001E2999 /* inbox.png */; };
 		7B1ECE11143661E6001E2999 /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECE0D143661E6001E2999 /* inbox@2x.png */; };
+		7B26367D1444B7E500C1771D /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B26367C1444B7E500C1771D /* AirshipConfig.plist */; };
+		7BAEA97514434C3500F229CE /* libUAirship-1.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAEA97414434C3500F229CE /* libUAirship-1.1.0.a */; };
 		7BC46FF314350C88008AD9A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC46FF214350C88008AD9A1 /* UIKit.framework */; };
 		7BC46FF514350C88008AD9A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC46FF414350C88008AD9A1 /* Foundation.framework */; };
 		7BC46FF714350C88008AD9A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC46FF614350C88008AD9A1 /* CoreGraphics.framework */; };
@@ -38,7 +40,6 @@
 		7BC4703D14350CF4008AD9A1 /* UAInboxNavUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4703314350CF4008AD9A1 /* UAInboxNavUI.m */; };
 		7BC4703E14350CF4008AD9A1 /* UAInboxOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4703514350CF4008AD9A1 /* UAInboxOverlayController.m */; };
 		7BC4703F14350CF4008AD9A1 /* UAInboxUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4703714350CF4008AD9A1 /* UAInboxUI.m */; };
-		7BC4704114350D21008AD9A1 /* libUAirship-1.0.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC4704014350D20008AD9A1 /* libUAirship-1.0.7.a */; };
 		7BC4704A14350D38008AD9A1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC4704214350D38008AD9A1 /* CFNetwork.framework */; };
 		7BC4704B14350D38008AD9A1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC4704314350D38008AD9A1 /* CoreTelephony.framework */; };
 		7BC4704C14350D38008AD9A1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC4704414350D38008AD9A1 /* libsqlite3.dylib */; };
@@ -50,7 +51,6 @@
 		7BC4705414350D85008AD9A1 /* UAInboxTabUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4705314350D85008AD9A1 /* UAInboxTabUI.m */; };
 		7BC470651435172F008AD9A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC470631435172F008AD9A1 /* MainViewController.m */; };
 		7BC470661435172F008AD9A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC470641435172F008AD9A1 /* MainViewController.xib */; };
-		7BC4707614351C80008AD9A1 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4707514351C80008AD9A1 /* AirshipConfig.plist */; };
 		7BC4709D14351F73008AD9A1 /* overlayCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4709914351F4B008AD9A1 /* overlayCloseBtn.png */; };
 		7BC4709E14351F73008AD9A1 /* overlayCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4709A14351F4B008AD9A1 /* overlayCloseBtn@2x.png */; };
 		7BD03FD8143B8139001E5D3E /* JSDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD03FD7143B8139001E5D3E /* JSDelegate.m */; };
@@ -61,6 +61,8 @@
 		7B1ECE0B143661E6001E2999 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
 		7B1ECE0C143661E6001E2999 /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
 		7B1ECE0D143661E6001E2999 /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
+		7B26367C1444B7E500C1771D /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = AirshipConfig.plist; sourceTree = "<group>"; };
+		7BAEA97414434C3500F229CE /* libUAirship-1.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.1.0.a"; path = "../Airship/libUAirship-1.1.0.a"; sourceTree = "<group>"; };
 		7BC46FEE14350C88008AD9A1 /* TabBarInboxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarInboxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC46FF214350C88008AD9A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7BC46FF414350C88008AD9A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,7 +102,6 @@
 		7BC4703514350CF4008AD9A1 /* UAInboxOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAInboxOverlayController.m; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxOverlayController.m; sourceTree = "<group>"; };
 		7BC4703614350CF4008AD9A1 /* UAInboxUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAInboxUI.h; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxUI.h; sourceTree = "<group>"; };
 		7BC4703714350CF4008AD9A1 /* UAInboxUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAInboxUI.m; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxUI.m; sourceTree = "<group>"; };
-		7BC4704014350D20008AD9A1 /* libUAirship-1.0.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.0.7.a"; path = "../Airship/libUAirship-1.0.7.a"; sourceTree = "<group>"; };
 		7BC4704214350D38008AD9A1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7BC4704314350D38008AD9A1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		7BC4704414350D38008AD9A1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -114,7 +115,6 @@
 		7BC470621435172F008AD9A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		7BC470631435172F008AD9A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		7BC470641435172F008AD9A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		7BC4707514351C80008AD9A1 /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = AirshipConfig.plist; sourceTree = "<group>"; };
 		7BC4709914351F4B008AD9A1 /* overlayCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlayCloseBtn.png; path = ../../Airship/UI/Default/Inbox/Resources/Shared/Overlay/overlayCloseBtn.png; sourceTree = "<group>"; };
 		7BC4709A14351F4B008AD9A1 /* overlayCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "overlayCloseBtn@2x.png"; path = "../../Airship/UI/Default/Inbox/Resources/Shared/Overlay/overlayCloseBtn@2x.png"; sourceTree = "<group>"; };
 		7BD03FD6143B8139001E5D3E /* JSDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BAEA97514434C3500F229CE /* libUAirship-1.1.0.a in Frameworks */,
 				7BC4704A14350D38008AD9A1 /* CFNetwork.framework in Frameworks */,
 				7BC4704B14350D38008AD9A1 /* CoreTelephony.framework in Frameworks */,
 				7BC4704C14350D38008AD9A1 /* libsqlite3.dylib in Frameworks */,
@@ -134,7 +135,6 @@
 				7BC4704F14350D38008AD9A1 /* Security.framework in Frameworks */,
 				7BC4705014350D38008AD9A1 /* StoreKit.framework in Frameworks */,
 				7BC4705114350D38008AD9A1 /* SystemConfiguration.framework in Frameworks */,
-				7BC4704114350D21008AD9A1 /* libUAirship-1.0.7.a in Frameworks */,
 				7BC46FF314350C88008AD9A1 /* UIKit.framework in Frameworks */,
 				7BC46FF514350C88008AD9A1 /* Foundation.framework in Frameworks */,
 				7BC46FF714350C88008AD9A1 /* CoreGraphics.framework in Frameworks */,
@@ -164,6 +164,7 @@
 		7BC46FF114350C88008AD9A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7BAEA97414434C3500F229CE /* libUAirship-1.1.0.a */,
 				7BC4704214350D38008AD9A1 /* CFNetwork.framework */,
 				7BC4704314350D38008AD9A1 /* CoreTelephony.framework */,
 				7BC4704414350D38008AD9A1 /* libsqlite3.dylib */,
@@ -172,7 +173,6 @@
 				7BC4704714350D38008AD9A1 /* Security.framework */,
 				7BC4704814350D38008AD9A1 /* StoreKit.framework */,
 				7BC4704914350D38008AD9A1 /* SystemConfiguration.framework */,
-				7BC4704014350D20008AD9A1 /* libUAirship-1.0.7.a */,
 				7BC46FF214350C88008AD9A1 /* UIKit.framework */,
 				7BC46FF414350C88008AD9A1 /* Foundation.framework */,
 				7BC46FF614350C88008AD9A1 /* CoreGraphics.framework */,
@@ -187,8 +187,6 @@
 				7BD03FD7143B8139001E5D3E /* JSDelegate.m */,
 				7BC470621435172F008AD9A1 /* MainViewController.h */,
 				7BC470631435172F008AD9A1 /* MainViewController.m */,
-				7BC470641435172F008AD9A1 /* MainViewController.xib */,
-				7BC4700414350C88008AD9A1 /* MainWindow.xib */,
 				7BC4700114350C88008AD9A1 /* TabBarInboxSampleAppDelegate.h */,
 				7BC4700214350C88008AD9A1 /* TabBarInboxSampleAppDelegate.m */,
 				7BC4705214350D85008AD9A1 /* UAInboxTabUI.h */,
@@ -202,12 +200,14 @@
 		7BC46FF914350C88008AD9A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7B26367C1444B7E500C1771D /* AirshipConfig.plist */,
 				7B1ECE0A143661E6001E2999 /* clock.png */,
 				7B1ECE0B143661E6001E2999 /* clock@2x.png */,
 				7B1ECE0C143661E6001E2999 /* inbox.png */,
 				7B1ECE0D143661E6001E2999 /* inbox@2x.png */,
-				7BC4707514351C80008AD9A1 /* AirshipConfig.plist */,
 				7BC4700D14350CD2008AD9A1 /* Inbox UI */,
+				7BC470641435172F008AD9A1 /* MainViewController.xib */,
+				7BC4700414350C88008AD9A1 /* MainWindow.xib */,
 				7BC46FFA14350C88008AD9A1 /* TabBarInboxSample-Info.plist */,
 				7BC46FFB14350C88008AD9A1 /* InfoPlist.strings */,
 				7BC46FFE14350C88008AD9A1 /* main.m */,
@@ -324,11 +324,11 @@
 				7BC4702614350CE7008AD9A1 /* up.png in Resources */,
 				7BC4702714350CE7008AD9A1 /* up@2x.png in Resources */,
 				7BC470661435172F008AD9A1 /* MainViewController.xib in Resources */,
-				7BC4707614351C80008AD9A1 /* AirshipConfig.plist in Resources */,
 				7B1ECE0E143661E6001E2999 /* clock.png in Resources */,
 				7B1ECE0F143661E6001E2999 /* clock@2x.png in Resources */,
 				7B1ECE10143661E6001E2999 /* inbox.png in Resources */,
 				7B1ECE11143661E6001E2999 /* inbox@2x.png in Resources */,
+				7B26367D1444B7E500C1771D /* AirshipConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +382,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jimmy Dee (492446EY7H)";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -397,7 +397,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PROVISIONING_PROFILE = "7C628EC8-D7CC-4C80-9AE1-3EF678B66850";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../Airship/**";
 			};
@@ -408,7 +407,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jimmy Dee (492446EY7H)";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -417,7 +416,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "7C628EC8-D7CC-4C80-9AE1-3EF678B66850";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../Airship/**";
 				VALIDATE_PRODUCT = YES;
@@ -427,14 +425,22 @@
 		7BC4700A14350C88008AD9A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jimmy Dee (492446EY7H)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TabBarInboxSample/uagit/ios-library/Airship/External\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBarInboxSample/TabBarInboxSample-Prefix.pch";
 				INFOPLIST_FILE = "TabBarInboxSample/TabBarInboxSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Airship\"",
+					"\"$(SRCROOT)/TabBarInboxSample/uagit/ios-library/Airship\"",
+					"\"$(SRCROOT)/TabBarInboxSample/uagit/ios-library/Debug/Airship\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "174AC913-AFB6-4665-BF3B-2E3A7D1C2AA1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -442,14 +448,22 @@
 		7BC4700B14350C88008AD9A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jimmy Dee (492446EY7H)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TabBarInboxSample/uagit/ios-library/Airship/External\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBarInboxSample/TabBarInboxSample-Prefix.pch";
 				INFOPLIST_FILE = "TabBarInboxSample/TabBarInboxSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Airship\"",
+					"\"$(SRCROOT)/TabBarInboxSample/uagit/ios-library/Airship\"",
+					"\"$(SRCROOT)/TabBarInboxSample/uagit/ios-library/Debug/Airship\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "174AC913-AFB6-4665-BF3B-2E3A7D1C2AA1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

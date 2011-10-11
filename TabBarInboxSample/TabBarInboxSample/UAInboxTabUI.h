@@ -12,7 +12,7 @@
 
 @class UAInboxAlertHandler;
 
-@interface UAInboxTabUI : NSObject<UAInboxUIProtocol, UAInboxPushHandlerDelegate, UAInboxMessageListObserver>
+@interface UAInboxTabUI : NSObject<UAInboxUIProtocol, UAInboxPushHandlerDelegate, UAInboxMessageListObserver, UITabBarControllerDelegate>
 
 SINGLETON_INTERFACE(UAInboxTabUI);
 
@@ -20,7 +20,6 @@ SINGLETON_INTERFACE(UAInboxTabUI);
 - (void)setCurrentBadgeNum;
 
 @property (nonatomic, retain) NSString* badgeValue;
-@property (nonatomic, assign) BOOL useOverlay;
 @property (nonatomic, retain) NSBundle* localizationBundle;
 @property (nonatomic, retain) UITabBarController* tabBarController;
 @property (nonatomic, retain) id<UAInboxJavaScriptDelegate> jsDelegate;

@@ -25,19 +25,20 @@
 
 @implementation UAInboxTabUI
 
-@synthesize useOverlay;
 @synthesize localizationBundle;
 @synthesize tabBarController;
-@synthesize isVisible;
 @synthesize alertHandler;
 @synthesize mlc;
 @synthesize badgeValue;
 @synthesize jsDelegate;
+@synthesize isVisible;
 
 SINGLETON_IMPLEMENTATION(UAInboxTabUI);
 
 - (void)dealloc
 {
+    [[UAInbox shared].messageList removeObserver:self];
+
     RELEASE_SAFELY(localizationBundle);
     RELEASE_SAFELY(tabBarController);
     RELEASE_SAFELY(alertHandler);
@@ -54,9 +55,12 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
         NSString* path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"UAInboxLocalization.bundle"];
         self.localizationBundle = [NSBundle bundleWithPath:path];
         
-        self.useOverlay = NO;
-        self.isVisible = YES;
+        self.isVisible = NO;
         
+        /*
+         * Step 1a: Setup tab bar controller and other initialization
+         */
+
         // Set up alert handler
         alertHandler = [[UAInboxAlertHandler alloc]init];
         
@@ -74,6 +78,7 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
         
         tabBarController = [[UITabBarController alloc]init];
         tabBarController.viewControllers = [NSArray arrayWithObjects:main, mlc, nil];
+        tabBarController.delegate = self;
         
         // add myself as a message list observer so I know when things change
         [[UAInbox shared].messageList addObserver:self];
@@ -92,7 +97,15 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
 
 - (void)quitInbox
 {
-    self.isVisible = NO;
+    /*
+     * Step 1c: Quit inbox.
+     */
+
+    if (!self.isVisible) return;
+    
+    [[UAInbox shared].messageList removeObserver:mlc];
+    
+    self.isVisible = YES;
 }
 
 + (void)quitInbox
@@ -101,6 +114,10 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
 }
 
 + (void)loadLaunchMessage {
+    /*
+     * Step 1e: Load a launch message, if any.
+     */
+    
     // if pushhandler has a messageID load it
     UAInboxPushHandler *pushHandler = [UAInbox shared].pushHandler;
     if (pushHandler.viewingMessageID && pushHandler.hasLaunchMessage) {
@@ -118,13 +135,23 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
 
 + (void)displayInbox:(UIViewController *)viewController animated:(BOOL)animated
 {
+    /*
+     * Step 1b: Display a list of messages
+     */
+
     UALOG(@"displayInbox:");
+
+    if ([self shared].isVisible) return;
+    
+    [[UAInbox shared].messageList addObserver:[self shared].mlc];
     [self shared].isVisible = YES;
-    [[self shared]setCurrentBadgeNum];
 }
 
 + (void)displayMessage:(UIViewController *)viewController message:(NSString *)messageID
 {
+    /*
+     * Step 1d: Display an individual message
+     */
     [UAInboxOverlayController showWindowInsideViewController:[self shared].tabBarController withMessageID:messageID];
 }
 
@@ -196,6 +223,16 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
 {
     UALOG(@"batchMarkAsReadFinished");
     [self setCurrentBadgeNum];   
+}
+
+- (void)tabBarController:(UITabBarController *)theTabBarController didSelectViewController:(UIViewController *)viewController
+{
+    if (viewController == mlc) {
+        [[self class]displayInbox:theTabBarController animated:YES];
+    }
+    else {
+        [[self class]quitInbox];
+    }
 }
 
 @end

@@ -39,6 +39,8 @@ SINGLETON_IMPLEMENTATION(UAInboxSplitUI);
 
 - (void)dealloc
 {
+    [[UAInbox shared].messageList removeObserver:mlc];
+    
     RELEASE_SAFELY(localizationBundle);
     RELEASE_SAFELY(alertHandler);
     RELEASE_SAFELY(splitViewController);

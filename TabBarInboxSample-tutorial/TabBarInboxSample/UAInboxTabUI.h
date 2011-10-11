@@ -12,14 +12,13 @@
 
 @class UAInboxAlertHandler;
 
-@interface UAInboxTabUI : NSObject<UAInboxUIProtocol>
+@interface UAInboxTabUI : NSObject<UAInboxUIProtocol, UITabBarControllerDelegate>
 
 SINGLETON_INTERFACE(UAInboxTabUI);
 
 - (void)quitInbox;
 
 @property (nonatomic, retain) NSString* badgeValue;
-@property (nonatomic, assign) BOOL useOverlay;
 @property (nonatomic, retain) NSBundle* localizationBundle;
 @property (nonatomic, retain) UITabBarController* tabBarController;
 

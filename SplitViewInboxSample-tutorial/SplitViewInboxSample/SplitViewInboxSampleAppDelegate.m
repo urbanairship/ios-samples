@@ -28,6 +28,11 @@
      */
 
     [self.window makeKeyAndVisible];
+    
+    /*
+     * Step 3b: Connect the push handler delegate
+     */
+
     return YES;
 }
 

@@ -17,6 +17,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Register for notifications
+    [[UIApplication sharedApplication]
+     registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
+                                         UIRemoteNotificationTypeSound |
+                                         UIRemoteNotificationTypeAlert)];
+    
+    /*
+     * Step 2a: Initialize Airship and root view controller
+     */
+    
     //Init Airship launch options
     NSMutableDictionary *takeOffOptions = [[[NSMutableDictionary alloc] init] autorelease];
     [takeOffOptions setValue:launchOptions forKey:UAirshipTakeOffOptionsLaunchOptionsKey];
@@ -25,30 +35,35 @@
     // Please populate AirshipConfig.plist with your info from http://go.urbanairship.com
     [UAirship takeOff:takeOffOptions];
     
-    // Register for notifications
-    [[UIApplication sharedApplication]
-     registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
-                                         UIRemoteNotificationTypeSound |
-                                         UIRemoteNotificationTypeAlert)];
-    
     // Set the application to use the UAInboxSplitUI we've defined here.
     [UAInbox useCustomUI:[UAInboxSplitUI class]];
-    [UAInbox shared].pushHandler.delegate = [UAInboxSplitUI shared];
-
+    
     // Set the root view controller to the split view controller
     [self.window setRootViewController:[UAInboxSplitUI shared].splitViewController];
-    [self.window makeKeyAndVisible];
-
+    
+    [self.window makeKeyAndVisible];    
+    
+    /*
+     * Step 3b: Connect the push handler delegate
+     */
+    
+    [UAInbox shared].pushHandler.delegate = [UAInboxSplitUI shared];
+    
     [UAInboxPushHandler handleLaunchOptions:launchOptions];
-
+    
     if([[UAInbox shared].pushHandler hasLaunchMessage]) {
         [[[UAInbox shared] uiClass] loadLaunchMessage];
     }
-
+    
     return NO;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    /*
+     * Step 2c: Set an icon badge number, if any.
+     */
+    
     UAInbox *inbox = [UAInbox shared];
     if (inbox != nil && inbox.messageList != nil && inbox.messageList.unreadCount >= 0) {
         [[UIApplication sharedApplication] setApplicationIconBadgeNumber:inbox.messageList.unreadCount];
@@ -84,10 +99,8 @@
     UALOG(@"did Fail To Register For Remote Notifications With Error: %@", error);
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-    
-    //TODO: clean up all UI classes
-    
+- (void)applicationWillTerminate:(UIApplication *)application
+{
     [UAirship land];
 }
 

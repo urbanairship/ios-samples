@@ -35,7 +35,6 @@
 		7B2D2430143288D700641B85 /* uncheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D2423143288D700641B85 /* uncheck@2x.png */; };
 		7B2D2431143288D700641B85 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D2424143288D700641B85 /* up.png */; };
 		7B2D2432143288D700641B85 /* up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B2D2425143288D700641B85 /* up@2x.png */; };
-		7B2D24341432891300641B85 /* libUAirship-1.0.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D24331432891300641B85 /* libUAirship-1.0.7.a */; };
 		7B2D243D1432892E00641B85 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D24351432892E00641B85 /* CFNetwork.framework */; };
 		7B2D243E1432892E00641B85 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D24361432892E00641B85 /* CoreTelephony.framework */; };
 		7B2D243F1432892E00641B85 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D24371432892E00641B85 /* libsqlite3.dylib */; };
@@ -46,6 +45,7 @@
 		7B2D24441432892E00641B85 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D243C1432892E00641B85 /* SystemConfiguration.framework */; };
 		7B2D24471432897600641B85 /* UAInboxSplitUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D24461432897600641B85 /* UAInboxSplitUI.m */; };
 		7B649CD31433B2E9003A35AC /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B649CD21433B2E9003A35AC /* AirshipConfig.plist */; };
+		7BA80F001443929800578113 /* libUAirship-1.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA80EFF1443929800578113 /* libUAirship-1.1.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,7 +89,6 @@
 		7B2D2423143288D700641B85 /* uncheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "uncheck@2x.png"; path = "../../Airship/UI/Default/Inbox/Resources/Shared/uncheck@2x.png"; sourceTree = "<group>"; };
 		7B2D2424143288D700641B85 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = up.png; path = ../../Airship/UI/Default/Inbox/Resources/Shared/up.png; sourceTree = "<group>"; };
 		7B2D2425143288D700641B85 /* up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "up@2x.png"; path = "../../Airship/UI/Default/Inbox/Resources/Shared/up@2x.png"; sourceTree = "<group>"; };
-		7B2D24331432891300641B85 /* libUAirship-1.0.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.0.7.a"; path = "../Airship/libUAirship-1.0.7.a"; sourceTree = "<group>"; };
 		7B2D24351432892E00641B85 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7B2D24361432892E00641B85 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		7B2D24371432892E00641B85 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -101,6 +100,7 @@
 		7B2D24451432897600641B85 /* UAInboxSplitUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAInboxSplitUI.h; sourceTree = "<group>"; };
 		7B2D24461432897600641B85 /* UAInboxSplitUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAInboxSplitUI.m; sourceTree = "<group>"; };
 		7B649CD21433B2E9003A35AC /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = AirshipConfig.plist; path = "../../../uagit/ios-library/InboxSample/AirshipConfig.plist"; sourceTree = "<group>"; };
+		7BA80EFF1443929800578113 /* libUAirship-1.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.1.0.a"; path = "../Airship/libUAirship-1.1.0.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BA80F001443929800578113 /* libUAirship-1.1.0.a in Frameworks */,
 				7B2D243D1432892E00641B85 /* CFNetwork.framework in Frameworks */,
 				7B2D243E1432892E00641B85 /* CoreTelephony.framework in Frameworks */,
 				7B2D243F1432892E00641B85 /* libsqlite3.dylib in Frameworks */,
@@ -116,7 +117,6 @@
 				7B2D24421432892E00641B85 /* Security.framework in Frameworks */,
 				7B2D24431432892E00641B85 /* StoreKit.framework in Frameworks */,
 				7B2D24441432892E00641B85 /* SystemConfiguration.framework in Frameworks */,
-				7B2D24341432891300641B85 /* libUAirship-1.0.7.a in Frameworks */,
 				7B2D23E41432877200641B85 /* UIKit.framework in Frameworks */,
 				7B2D23E61432877200641B85 /* Foundation.framework in Frameworks */,
 				7B2D23E81432877200641B85 /* CoreGraphics.framework in Frameworks */,
@@ -146,6 +146,7 @@
 		7B2D23E21432877200641B85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7BA80EFF1443929800578113 /* libUAirship-1.1.0.a */,
 				7B2D24351432892E00641B85 /* CFNetwork.framework */,
 				7B2D24361432892E00641B85 /* CoreTelephony.framework */,
 				7B2D24371432892E00641B85 /* libsqlite3.dylib */,
@@ -154,7 +155,6 @@
 				7B2D243A1432892E00641B85 /* Security.framework */,
 				7B2D243B1432892E00641B85 /* StoreKit.framework */,
 				7B2D243C1432892E00641B85 /* SystemConfiguration.framework */,
-				7B2D24331432891300641B85 /* libUAirship-1.0.7.a */,
 				7B2D23E31432877200641B85 /* UIKit.framework */,
 				7B2D23E51432877200641B85 /* Foundation.framework */,
 				7B2D23E71432877200641B85 /* CoreGraphics.framework */,
@@ -346,6 +346,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -371,6 +372,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;

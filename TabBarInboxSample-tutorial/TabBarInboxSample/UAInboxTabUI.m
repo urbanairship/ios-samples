@@ -24,7 +24,6 @@
 
 @implementation UAInboxTabUI
 
-@synthesize useOverlay;
 @synthesize localizationBundle;
 @synthesize tabBarController;
 @synthesize isVisible;
@@ -57,8 +56,7 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
         NSString* path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"UAInboxLocalization.bundle"];
         self.localizationBundle = [NSBundle bundleWithPath:path];
         
-        self.useOverlay = NO;
-        self.isVisible = YES;
+        self.isVisible = NO;
         
         /*
          * Step 1a: Setup tab bar controller and other initialization
@@ -98,6 +96,16 @@ SINGLETON_IMPLEMENTATION(UAInboxTabUI);
     /*
      * Step 1e: Load a launch message, if any.
      */
+}
+
+- (void)tabBarController:(UITabBarController *)theTabBarController didSelectViewController:(UIViewController *)viewController
+{
+    if (viewController == mlc) {
+        [[self class]displayInbox:theTabBarController animated:YES];
+    }
+    else {
+        [[self class]quitInbox];
+    }
 }
 
 @end
