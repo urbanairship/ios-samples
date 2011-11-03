@@ -110,7 +110,7 @@ SINGLETON_INTERFACE(UAInboxUI);
     
     NSString* fields = [options valueForKey:@"fields"];
     if (fields == nil) {
-        return [NSString stringWithFormat:@"%@.error = 'missing fields parameter'; %@.finishedLoading();", varName, varName];
+        return [NSString stringWithFormat:@"%@.error = 'missing fields parameter'; %@.onFinished();", varName, varName];
     }
     
     bool error = false;
@@ -140,10 +140,10 @@ SINGLETON_INTERFACE(UAInboxUI);
     }
     
     if (!error) {
-        return [response stringByAppendingFormat:@"%@.finishedLoading();", varName];
+        return [response stringByAppendingFormat:@"%@.onFinished();", varName];
     }
     else {
-        return [NSString stringWithFormat:@"%@.error = 'invalid field'; %@.finishedLoading();", varName, varName];
+        return [NSString stringWithFormat:@"%@.error = 'invalid field'; %@.onFinished();", varName, varName];
     }
 }
 
