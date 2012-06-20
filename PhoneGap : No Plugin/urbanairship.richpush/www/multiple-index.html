@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+    <head>
+        <title>JavaScript - Example form</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+            <!--
+            // This is the check script
+            
+            function checkit()
+            {
+                
+                // In textstring I gather the data that are finally written to the textarea.
+                
+            	var textstring = '';
+                
+                // I put all boxes and their values in textstring
+                
+                var box = document.forms['example'].elements[0];
+                textstring += box.name + ': ' + box.value + '\n';
+                
+            	// Get value of the 'How' select box.
+                
+            	user_input = document.example.refer.options[document.example.refer.selectedIndex].value
+            	textstring += 'Start: ' + user_input + '\n';
+                
+            	// See what checkboxes are checked.
+                
+            	textstring += 'Tags: ';
+            	for (i=2;i<6;i++) {
+            		if (document.example.elements[i].checked) {
+            			textstring += document.example.elements[i].name + ' ';
+            		}
+            	}
+                
+            	// Write textstring to the textarea.
+                
+            	document.forms['example'].output.value = textstring;
+            }
+            // -->
+            </script>
+        <style type="text/css">
+            td[colspan] {
+                text-align: center;
+            }
+            </style>
+    </head>
+    <body>
+        <form name="example" action="#" onsubmit="checkit(); return false">
+            <table class="form">
+                <tr>
+                    <td>Alias</td>
+                    <td><input name="Alias" /></td>
+                </tr>
+                <tr>
+                    <td>Earliest start time:</td>
+                    <td>
+                        <select name="refer">
+                            <option value="" selected="selected">--- Select ---</option>
+                            <option value="1 AM">1 AM</option>
+                            <option value="2 AM">2 AM</option>
+                            <option value="3 AM">3 AM</option>
+                            <option value="4 AM">4 AM</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>I'd like Notifications on:</td>
+                    <td><input type="checkbox" name="oranges" />oranges<br />
+                        <input type="checkbox" name="potatoes" />potatoes<br />
+                        <input type="checkbox" name="tomatoes" />tomatoes<br />
+                        <input type="checkbox" name="blue whales" />blue whales
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Update Settings" />
+                        <input type="reset" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea cols="30" rows="7" name="output"></textarea></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
