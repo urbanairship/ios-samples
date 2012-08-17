@@ -44,8 +44,7 @@
 		7B2D24431432892E00641B85 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D243B1432892E00641B85 /* StoreKit.framework */; };
 		7B2D24441432892E00641B85 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2D243C1432892E00641B85 /* SystemConfiguration.framework */; };
 		7B2D24471432897600641B85 /* UAInboxSplitUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B2D24461432897600641B85 /* UAInboxSplitUI.m */; };
-		7B649CD31433B2E9003A35AC /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B649CD21433B2E9003A35AC /* AirshipConfig.plist */; };
-		7BA80F001443929800578113 /* libUAirship-1.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA80EFF1443929800578113 /* libUAirship-1.1.0.a */; };
+		BB4DF99315DEBEB20072AC80 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4DF99215DEBEB20072AC80 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,8 +98,7 @@
 		7B2D243C1432892E00641B85 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7B2D24451432897600641B85 /* UAInboxSplitUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAInboxSplitUI.h; sourceTree = "<group>"; };
 		7B2D24461432897600641B85 /* UAInboxSplitUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAInboxSplitUI.m; sourceTree = "<group>"; };
-		7B649CD21433B2E9003A35AC /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = AirshipConfig.plist; path = "../../../uagit/ios-library/InboxSample/AirshipConfig.plist"; sourceTree = "<group>"; };
-		7BA80EFF1443929800578113 /* libUAirship-1.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.1.0.a"; path = "../Airship/libUAirship-1.1.0.a"; sourceTree = "<group>"; };
+		BB4DF99215DEBEB20072AC80 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA80F001443929800578113 /* libUAirship-1.1.0.a in Frameworks */,
+				BB4DF99315DEBEB20072AC80 /* CoreLocation.framework in Frameworks */,
 				7B2D243D1432892E00641B85 /* CFNetwork.framework in Frameworks */,
 				7B2D243E1432892E00641B85 /* CoreTelephony.framework in Frameworks */,
 				7B2D243F1432892E00641B85 /* libsqlite3.dylib in Frameworks */,
@@ -146,7 +144,7 @@
 		7B2D23E21432877200641B85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7BA80EFF1443929800578113 /* libUAirship-1.1.0.a */,
+				BB4DF99215DEBEB20072AC80 /* CoreLocation.framework */,
 				7B2D24351432892E00641B85 /* CFNetwork.framework */,
 				7B2D24361432892E00641B85 /* CoreTelephony.framework */,
 				7B2D24371432892E00641B85 /* libsqlite3.dylib */,
@@ -178,7 +176,6 @@
 		7B2D23EA1432877200641B85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B649CD21433B2E9003A35AC /* AirshipConfig.plist */,
 				7B2D2418143288B200641B85 /* Inbox UI */,
 				7B2D23EB1432877200641B85 /* SplitViewInboxSample-Info.plist */,
 				7B2D23EC1432877200641B85 /* InfoPlist.strings */,
@@ -294,7 +291,6 @@
 				7B2D2430143288D700641B85 /* uncheck@2x.png in Resources */,
 				7B2D2431143288D700641B85 /* up.png in Resources */,
 				7B2D2432143288D700641B85 /* up@2x.png in Resources */,
-				7B649CD31433B2E9003A35AC /* AirshipConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,9 +387,12 @@
 		7B2D23FB1432877200641B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SplitViewInboxSample/SplitViewInboxSample-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "SplitViewInboxSample/SplitViewInboxSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Airship\"",
@@ -406,9 +405,12 @@
 		7B2D23FC1432877200641B85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SplitViewInboxSample/SplitViewInboxSample-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "SplitViewInboxSample/SplitViewInboxSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Airship\"",
