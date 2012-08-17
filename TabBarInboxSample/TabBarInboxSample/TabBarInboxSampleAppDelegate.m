@@ -7,6 +7,7 @@
 //
 
 #import "UAirship.h"
+#import "UAPush.h"
 #import "UAInboxTabUI.h"
 #import "UAInboxMessageList.h"
 #import "TabBarInboxSampleAppDelegate.h"
@@ -61,7 +62,7 @@
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     UALOG(@"APN device token: %@", deviceToken);
     // Updates the device token and registers the token with UA
-    [[UAirship shared] registerDeviceToken:deviceToken];
+    [[UAPush shared] registerDeviceToken:deviceToken];
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *) error {

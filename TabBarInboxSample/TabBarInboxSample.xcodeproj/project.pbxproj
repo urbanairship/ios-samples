@@ -11,8 +11,6 @@
 		7B1ECE0F143661E6001E2999 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECE0B143661E6001E2999 /* clock@2x.png */; };
 		7B1ECE10143661E6001E2999 /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECE0C143661E6001E2999 /* inbox.png */; };
 		7B1ECE11143661E6001E2999 /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B1ECE0D143661E6001E2999 /* inbox@2x.png */; };
-		7B26367D1444B7E500C1771D /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B26367C1444B7E500C1771D /* AirshipConfig.plist */; };
-		7BAEA97514434C3500F229CE /* libUAirship-1.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAEA97414434C3500F229CE /* libUAirship-1.1.0.a */; };
 		7BC46FF314350C88008AD9A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC46FF214350C88008AD9A1 /* UIKit.framework */; };
 		7BC46FF514350C88008AD9A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC46FF414350C88008AD9A1 /* Foundation.framework */; };
 		7BC46FF714350C88008AD9A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC46FF614350C88008AD9A1 /* CoreGraphics.framework */; };
@@ -54,6 +52,9 @@
 		7BC4709D14351F73008AD9A1 /* overlayCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4709914351F4B008AD9A1 /* overlayCloseBtn.png */; };
 		7BC4709E14351F73008AD9A1 /* overlayCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4709A14351F4B008AD9A1 /* overlayCloseBtn@2x.png */; };
 		7BD03FD8143B8139001E5D3E /* JSDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD03FD7143B8139001E5D3E /* JSDelegate.m */; };
+		BB4DF97215DEADDA0072AC80 /* libUAirship-1.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4DF97115DEADDA0072AC80 /* libUAirship-1.3.2.a */; };
+		BB4DF97415DEADEB0072AC80 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4DF97315DEADEB0072AC80 /* CoreLocation.framework */; };
+		BB4DF97615DEAE930072AC80 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB4DF97515DEAE930072AC80 /* AirshipConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +62,6 @@
 		7B1ECE0B143661E6001E2999 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
 		7B1ECE0C143661E6001E2999 /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
 		7B1ECE0D143661E6001E2999 /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
-		7B26367C1444B7E500C1771D /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = AirshipConfig.plist; sourceTree = "<group>"; };
-		7BAEA97414434C3500F229CE /* libUAirship-1.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.1.0.a"; path = "../Airship/libUAirship-1.1.0.a"; sourceTree = "<group>"; };
 		7BC46FEE14350C88008AD9A1 /* TabBarInboxSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarInboxSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC46FF214350C88008AD9A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7BC46FF414350C88008AD9A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +118,9 @@
 		7BC4709A14351F4B008AD9A1 /* overlayCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "overlayCloseBtn@2x.png"; path = "../../Airship/UI/Default/Inbox/Resources/Shared/Overlay/overlayCloseBtn@2x.png"; sourceTree = "<group>"; };
 		7BD03FD6143B8139001E5D3E /* JSDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDelegate.h; sourceTree = "<group>"; };
 		7BD03FD7143B8139001E5D3E /* JSDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDelegate.m; sourceTree = "<group>"; };
+		BB4DF97115DEADDA0072AC80 /* libUAirship-1.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.3.2.a"; path = "../Airship/libUAirship-1.3.2.a"; sourceTree = "<group>"; };
+		BB4DF97315DEADEB0072AC80 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BB4DF97515DEAE930072AC80 /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BAEA97514434C3500F229CE /* libUAirship-1.1.0.a in Frameworks */,
+				BB4DF97415DEADEB0072AC80 /* CoreLocation.framework in Frameworks */,
+				BB4DF97215DEADDA0072AC80 /* libUAirship-1.3.2.a in Frameworks */,
 				7BC4704A14350D38008AD9A1 /* CFNetwork.framework in Frameworks */,
 				7BC4704B14350D38008AD9A1 /* CoreTelephony.framework in Frameworks */,
 				7BC4704C14350D38008AD9A1 /* libsqlite3.dylib in Frameworks */,
@@ -164,7 +167,8 @@
 		7BC46FF114350C88008AD9A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7BAEA97414434C3500F229CE /* libUAirship-1.1.0.a */,
+				BB4DF97315DEADEB0072AC80 /* CoreLocation.framework */,
+				BB4DF97115DEADDA0072AC80 /* libUAirship-1.3.2.a */,
 				7BC4704214350D38008AD9A1 /* CFNetwork.framework */,
 				7BC4704314350D38008AD9A1 /* CoreTelephony.framework */,
 				7BC4704414350D38008AD9A1 /* libsqlite3.dylib */,
@@ -200,7 +204,7 @@
 		7BC46FF914350C88008AD9A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B26367C1444B7E500C1771D /* AirshipConfig.plist */,
+				BB4DF97515DEAE930072AC80 /* AirshipConfig.plist */,
 				7B1ECE0A143661E6001E2999 /* clock.png */,
 				7B1ECE0B143661E6001E2999 /* clock@2x.png */,
 				7B1ECE0C143661E6001E2999 /* inbox.png */,
@@ -328,7 +332,7 @@
 				7B1ECE0F143661E6001E2999 /* clock@2x.png in Resources */,
 				7B1ECE10143661E6001E2999 /* inbox.png in Resources */,
 				7B1ECE11143661E6001E2999 /* inbox@2x.png in Resources */,
-				7B26367D1444B7E500C1771D /* AirshipConfig.plist in Resources */,
+				BB4DF97615DEAE930072AC80 /* AirshipConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +396,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -410,7 +414,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -425,22 +429,16 @@
 		7BC4700A14350C88008AD9A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jimmy Dee (492446EY7H)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/TabBarInboxSample/uagit/ios-library/Airship/External\"",
-				);
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBarInboxSample/TabBarInboxSample-Prefix.pch";
 				INFOPLIST_FILE = "TabBarInboxSample/TabBarInboxSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Airship\"",
-					"\"$(SRCROOT)/TabBarInboxSample/uagit/ios-library/Airship\"",
-					"\"$(SRCROOT)/TabBarInboxSample/uagit/ios-library/Debug/Airship\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "174AC913-AFB6-4665-BF3B-2E3A7D1C2AA1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -448,22 +446,16 @@
 		7BC4700B14350C88008AD9A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jimmy Dee (492446EY7H)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/TabBarInboxSample/uagit/ios-library/Airship/External\"",
-				);
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBarInboxSample/TabBarInboxSample-Prefix.pch";
 				INFOPLIST_FILE = "TabBarInboxSample/TabBarInboxSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Airship\"",
-					"\"$(SRCROOT)/TabBarInboxSample/uagit/ios-library/Airship\"",
-					"\"$(SRCROOT)/TabBarInboxSample/uagit/ios-library/Debug/Airship\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "174AC913-AFB6-4665-BF3B-2E3A7D1C2AA1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
