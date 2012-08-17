@@ -37,7 +37,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Register for notifications
-    [[UIApplication sharedApplication]
+    [[UAPush shared]
      registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
                                          UIRemoteNotificationTypeSound |
                                          UIRemoteNotificationTypeAlert)];
