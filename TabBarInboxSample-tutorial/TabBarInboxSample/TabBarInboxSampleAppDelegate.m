@@ -25,6 +25,7 @@
 
 
 #import "UAirship.h"
+#import "UAPush.h"
 #import "UAInboxTabUI.h"
 #import "UAInboxMessageList.h"
 #import "TabBarInboxSampleAppDelegate.h"
@@ -36,7 +37,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Register for notifications
-    [[UIApplication sharedApplication]
+    [[UAPush shared]
      registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
                                          UIRemoteNotificationTypeSound |
                                          UIRemoteNotificationTypeAlert)];
