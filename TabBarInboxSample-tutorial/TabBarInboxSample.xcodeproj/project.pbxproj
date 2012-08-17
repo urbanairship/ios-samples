@@ -38,7 +38,6 @@
 		7BC4703D14350CF4008AD9A1 /* UAInboxNavUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4703314350CF4008AD9A1 /* UAInboxNavUI.m */; };
 		7BC4703E14350CF4008AD9A1 /* UAInboxOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4703514350CF4008AD9A1 /* UAInboxOverlayController.m */; };
 		7BC4703F14350CF4008AD9A1 /* UAInboxUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC4703714350CF4008AD9A1 /* UAInboxUI.m */; };
-		7BC4704114350D21008AD9A1 /* libUAirship-1.0.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC4704014350D20008AD9A1 /* libUAirship-1.0.7.a */; };
 		7BC4704A14350D38008AD9A1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC4704214350D38008AD9A1 /* CFNetwork.framework */; };
 		7BC4704B14350D38008AD9A1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC4704314350D38008AD9A1 /* CoreTelephony.framework */; };
 		7BC4704C14350D38008AD9A1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC4704414350D38008AD9A1 /* libsqlite3.dylib */; };
@@ -52,6 +51,7 @@
 		7BC4706B14351A53008AD9A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC4706914351A53008AD9A1 /* MainViewController.xib */; };
 		7BC470A714351FD3008AD9A1 /* overlayCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC470A514351FD3008AD9A1 /* overlayCloseBtn.png */; };
 		7BC470A814351FD3008AD9A1 /* overlayCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC470A614351FD3008AD9A1 /* overlayCloseBtn@2x.png */; };
+		BB4DF98215DEB6B00072AC80 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4DF98115DEB6B00072AC80 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,7 +98,6 @@
 		7BC4703514350CF4008AD9A1 /* UAInboxOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAInboxOverlayController.m; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxOverlayController.m; sourceTree = "<group>"; };
 		7BC4703614350CF4008AD9A1 /* UAInboxUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAInboxUI.h; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxUI.h; sourceTree = "<group>"; };
 		7BC4703714350CF4008AD9A1 /* UAInboxUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAInboxUI.m; path = ../../Airship/UI/Default/Inbox/Classes/Shared/UAInboxUI.m; sourceTree = "<group>"; };
-		7BC4704014350D20008AD9A1 /* libUAirship-1.0.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-1.0.7.a"; path = "../Airship/libUAirship-1.0.7.a"; sourceTree = "<group>"; };
 		7BC4704214350D38008AD9A1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7BC4704314350D38008AD9A1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		7BC4704414350D38008AD9A1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -114,6 +113,7 @@
 		7BC4706914351A53008AD9A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		7BC470A514351FD3008AD9A1 /* overlayCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlayCloseBtn.png; path = ../../Airship/UI/Default/Inbox/Resources/Shared/Overlay/overlayCloseBtn.png; sourceTree = "<group>"; };
 		7BC470A614351FD3008AD9A1 /* overlayCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "overlayCloseBtn@2x.png"; path = "../../Airship/UI/Default/Inbox/Resources/Shared/Overlay/overlayCloseBtn@2x.png"; sourceTree = "<group>"; };
+		BB4DF98115DEB6B00072AC80 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4DF98215DEB6B00072AC80 /* CoreLocation.framework in Frameworks */,
 				7BC4704A14350D38008AD9A1 /* CFNetwork.framework in Frameworks */,
 				7BC4704B14350D38008AD9A1 /* CoreTelephony.framework in Frameworks */,
 				7BC4704C14350D38008AD9A1 /* libsqlite3.dylib in Frameworks */,
@@ -129,7 +130,6 @@
 				7BC4704F14350D38008AD9A1 /* Security.framework in Frameworks */,
 				7BC4705014350D38008AD9A1 /* StoreKit.framework in Frameworks */,
 				7BC4705114350D38008AD9A1 /* SystemConfiguration.framework in Frameworks */,
-				7BC4704114350D21008AD9A1 /* libUAirship-1.0.7.a in Frameworks */,
 				7BC46FF314350C88008AD9A1 /* UIKit.framework in Frameworks */,
 				7BC46FF514350C88008AD9A1 /* Foundation.framework in Frameworks */,
 				7BC46FF714350C88008AD9A1 /* CoreGraphics.framework in Frameworks */,
@@ -159,6 +159,7 @@
 		7BC46FF114350C88008AD9A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB4DF98115DEB6B00072AC80 /* CoreLocation.framework */,
 				7BC4704214350D38008AD9A1 /* CFNetwork.framework */,
 				7BC4704314350D38008AD9A1 /* CoreTelephony.framework */,
 				7BC4704414350D38008AD9A1 /* libsqlite3.dylib */,
@@ -167,7 +168,6 @@
 				7BC4704714350D38008AD9A1 /* Security.framework */,
 				7BC4704814350D38008AD9A1 /* StoreKit.framework */,
 				7BC4704914350D38008AD9A1 /* SystemConfiguration.framework */,
-				7BC4704014350D20008AD9A1 /* libUAirship-1.0.7.a */,
 				7BC46FF214350C88008AD9A1 /* UIKit.framework */,
 				7BC46FF414350C88008AD9A1 /* Foundation.framework */,
 				7BC46FF614350C88008AD9A1 /* CoreGraphics.framework */,
@@ -423,9 +423,12 @@
 		7BC4700A14350C88008AD9A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBarInboxSample/TabBarInboxSample-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "TabBarInboxSample/TabBarInboxSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Airship\"",
@@ -438,9 +441,12 @@
 		7BC4700B14350C88008AD9A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabBarInboxSample/TabBarInboxSample-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "TabBarInboxSample/TabBarInboxSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Airship\"",
